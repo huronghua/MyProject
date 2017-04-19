@@ -1,0 +1,22 @@
+@import "bootstrap/mixins";
+
+
+// Core CSS
+@import "style/variables";
+@import "style/forms";
+@import "style/buttons";
+
+// Components
+@import "style/badges";
+@import "style/progress-bars";
+@import "style/navs";
+@import "style/list-group";
+
+
+@import "style/layout";
+@import "style/main";
+
+//website Area Style
+@import "style/area/sys";
+
+

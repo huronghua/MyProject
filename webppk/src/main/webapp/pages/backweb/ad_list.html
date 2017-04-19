@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>角色管理</title>
+ <!-- Bootstrap -->
+<link rel="stylesheet" href="css/global.css">
+<link href="css/layout.css" rel="stylesheet">
+<link href="css/fonticon.css" rel="stylesheet">
+
+</head>
+<body class="navbady">
+   <div class="current">
+      <i class="icon-iconfont-shouye"></i>
+      <span>管理首页</span>><span>基本设置</span>><span>广告管理</span>
+   </div>
+   <div class="container_min">
+    <div class="listoperation clearboth">
+       <a href="ad_adit.html" class=" pull-left listoperation_add">
+          <i class="icon-iconfont-add"></i> 添加广告
+       </a>
+       <div class=" pull-left listoperation_search form-group">
+          <form action="" method="get">
+           <div class="pull-left form_item_inline">
+           <label for="textfield">广告名称：</label>
+           <input type="text" name="textfield" class="form-control form-border form-contro_w_b" id="textfield">
+           </div>
+           <div class="pull-left form_item_inline">
+              <label for="textfield">类型：</label>
+              <select name="select" id="select" class="form-control form-border form-contro_w_b form-controlselect" >
+                  <option value="全部">全部</option>
+           </select>
+           </div>
+           <div class="pull-left">
+             <input type="submit" name="button" id="button" class="btn btn-primary " value="提交">
+           </div>
+         </form>
+       </div>       
+      </div>
+        <div class="listtable">
+           <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table">
+              <!---------------------------- item  ------------------------------>
+              <tr>
+                <td align="center" scope="row">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox"></label>
+                </td>
+                <td align="center">2</td>
+                <td align="center">启用</td>
+                <td align="center">默认分类</td>
+                <td align="center">内容顶部导航大图</td>
+                <td align="center">2015/03/28</td>
+                <td align="center" colspan="cpemw">
+                   <a href="ad_adit.html" class="blue btn">编辑</a>
+                   <a href="#" class="btn">禁用</a>
+                   <a href="#" class="red btn">删除</a>
+               </td>
+              </tr>
+            </table>
+        </div>
+        <div class="listpaging ">
+           <ul>
+              <li class="previous">上一页</li>
+              <li class="artive">1</li>
+              <li><a href="">2</a></li>
+              <li><a href="">3</a></li>
+              <li><a href="">4</a></li>
+              <li><a href="">5</a></li>
+              <li><a href="">6</a></li>
+              <li><a href="">7</a></li>
+              <li><a href="">8</a></li>
+              <li><a href="">9</a></li>
+              <li class="next"><a href="">下一页</a></li>
+           </ul>
+        </div>
+        <div class="tacpem">
+             <label for="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <a href="" class="blue btn">全部</a>
+                <a href="" class="btn">启用</a>
+                <a href="" class="btn">禁用</a>
+                <a href="#" class="btn">删除</a>
+             </label>
+             
+        </div>
+    </div>
+</body>
+</html>

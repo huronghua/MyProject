@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>角色管理</title>
+ <!-- Bootstrap -->
+<link rel="stylesheet" href="css/global.css">
+<link href="css/layout.css" rel="stylesheet">
+<link href="css/fonticon.css" rel="stylesheet">
+
+</head>
+<body class="navbady">
+   <div class="current">
+      <i class="icon-iconfont-shouye"></i>
+      <span>管理首页</span>><span>基本设置</span>><span>日志管理</span>
+   </div>
+   <div class="container_min">
+    <div class="listoperation clearboth">
+       <div class=" pull-left listoperation_search form-group">
+          <form action="" method="get">
+           <div class="pull-left form_item_inline">
+           <label for="textfield">操作者：</label>
+           <input type="text" name="textfield" class="form-control form-border form-contro_w_b" id="textfield">
+           </div>
+           <div class="pull-left form_item_inline">
+           <label for="textfield">操作类型：</label>
+           <select name="select" id="select" class="form-control form-border form-contro_w_b form-controlselect" >
+                       <option value="编辑">编辑</option>
+                       <option value="修改">修改</option>
+                       <option value="删除">删除</option>
+           </select>
+           </div>
+           <div class="pull-left">
+             <input type="submit" name="button" id="button" class="btn btn-primary " value="提交">
+           </div>
+         </form>
+       </div>       
+      </div>
+        <div class="listtable">
+           <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table">
+              <tr>
+                <th width="15%">操作者</th>
+                <th width="15%">IP地址</th>
+                <th width="15%">操作时间</th>
+                <th width="55%" align="left">操作内容</th>
+              </tr>
+              <tr>
+                <td align="center" height="100" valign="top">admin</td>
+                <td align="center" valign="top"> 192.168.2.107</td>
+                <td align="center" valign="top">2016-04-25  </td>
+                <td align="left" valign="top">登录系统</td>
+
+              </tr>
+              
+            </table>
+        </div>
+    </div>
+</body>
+</html>

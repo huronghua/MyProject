@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sk.ppk.dao.JournalMapper">
+  <resultMap id="BaseResultMap" type="com.sk.ppk.model.Journal">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user" jdbcType="VARCHAR" property="user" />
+    <result column="columnname" jdbcType="VARCHAR" property="columnname" />
+    <result column="operater" jdbcType="VARCHAR" property="operater" />
+    <result column="ipaddress" jdbcType="VARCHAR" property="ipaddress" />
+    <result column="creattime" jdbcType="TIMESTAMP" property="creattime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user, columnname, operater, ipaddress, creattime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from journal
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  
+	<!--查询全部日志-->
+	<select id="selectAlljournalinfo" parameterType="java.util.Map" resultMap="BaseResultMap">
+		select * from journal
+	<where>
+        <if test="user!=null">
+        user like '%${user}%'
+    	</if>
+    </where>
+		order by creattime desc
+		limit #{page},#{rows}
+	</select>
+	
+	<!-- 查询指定条件的日志 -->
+	<select id="selectTypejournalinfo" parameterType="java.util.Map" resultMap="BaseResultMap">
+		select * from journal
+		<where>
+		<if test="user!=null">
+		user like '%${user}%'
+		</if>
+		<if test="operater!=null">
+		and operater like '${operater}'
+		</if>
+		</where>
+		order by creattime desc
+		limit #{page},#{rows}
+	</select>
+	
+	<!-- 查询指定条件的日志数量 -->
+	<select id="selectTypeCount" resultType="java.lang.Integer">
+	select 
+    Count(*)
+    from journal
+    <where>
+    <if test="user!=null">
+        user like '%${user}%'
+    </if>
+    <if test="operater!=null">
+        and operater like '${operater}'
+    </if>
+    </where>
+	</select>
+		
+	<!--查询全部日志的数量-->
+	<select id="selectJournalCount" resultType="java.lang.Integer">
+    select 
+    Count(*)
+    from journal
+    <where>
+        <if test="user!=null">
+        user like '%${user}%'
+    	</if>
+    </where>
+	</select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from journal
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.sk.ppk.model.Journal">
+    insert into journal (id, user, columnname, 
+      operater, ipaddress, creattime
+      )
+    values (#{id,jdbcType=INTEGER}, #{user,jdbcType=VARCHAR}, #{columnname,jdbcType=VARCHAR}, 
+      #{operater,jdbcType=VARCHAR}, #{ipaddress,jdbcType=VARCHAR}, #{creattime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.sk.ppk.model.Journal">
+    insert into journal
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="user != null">
+        user,
+      </if>
+      <if test="columnname != null">
+        columnname,
+      </if>
+      <if test="operater != null">
+        operater,
+      </if>
+      <if test="ipaddress != null">
+        ipaddress,
+      </if>
+      <if test="creattime != null">
+        creattime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="user != null">
+        #{user,jdbcType=VARCHAR},
+      </if>
+      <if test="columnname != null">
+        #{columnname,jdbcType=VARCHAR},
+      </if>
+      <if test="operater != null">
+        #{operater,jdbcType=VARCHAR},
+      </if>
+      <if test="ipaddress != null">
+        #{ipaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="creattime != null">
+        #{creattime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.sk.ppk.model.Journal">
+    update journal
+    <set>
+      <if test="user != null">
+        user = #{user,jdbcType=VARCHAR},
+      </if>
+      <if test="columnname != null">
+        columnname = #{columnname,jdbcType=VARCHAR},
+      </if>
+      <if test="operater != null">
+        operater = #{operater,jdbcType=VARCHAR},
+      </if>
+      <if test="ipaddress != null">
+        ipaddress = #{ipaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="creattime != null">
+        creattime = #{creattime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.sk.ppk.model.Journal">
+    update journal
+    set user = #{user,jdbcType=VARCHAR},
+      columnname = #{columnname,jdbcType=VARCHAR},
+      operater = #{operater,jdbcType=VARCHAR},
+      ipaddress = #{ipaddress,jdbcType=VARCHAR},
+      creattime = #{creattime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

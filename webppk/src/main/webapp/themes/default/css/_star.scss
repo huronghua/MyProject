@@ -1,0 +1,13 @@
+.ui-star-num strong{ color:#FF7300; font:16px/16px Verdana,Geneva,sans-serif; margin-right: 5px; }
+.ui-rating { cursor: default; position:relative; display:inline-block; padding:0; width:80px; height:16px; background:url(/themes/default/img/star.png) 0 0; _background-image:url(/themes/default/img/star.gif); }
+.ui-rating .star{ float:left; position:absolute; left:0; top:0; display:block; height:100%; _height:16px; max-width:100%; background:url(/themes/default/img/star.png) 0 -16px; _background-image:url(/themes/default/img/star.gif); }
+.ui-rating.big,
+.ui-star-num.big .ui-rating{ width:120px; height:24px; background-position:0 -32px; }
+.ui-rating.big .star,
+.ui-star-num.big .ui-rating .star{ height:100%; _height:24px; background-position:0 -56px; }
+.ui-star-num.big strong{ font-size:24px; line-height:24px; }
+.ui-rating.do{ cursor: pointer; }
+.ie .ui-star-num strong,
+.ie .ui-star-num .ui-rating{ float:left; }
+.ie .ui-star-num strong{ margin-right:10px; }
+.ln-course-info .ui-rating { cursor:default; }

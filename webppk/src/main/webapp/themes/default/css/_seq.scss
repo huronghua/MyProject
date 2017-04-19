@@ -1,0 +1,6 @@
+@charset "utf-8";
+.ui-seq .seq-item{ text-decoration:none; margin-right:-1px; padding:0 10px; border:1px solid #ddd; line-height:28px; color:#999; cursor:pointer; float:left; position:relative; z-index:10; }
+.ui-seq .seq-item:hover{ color:#333; }
+.ui-seq .seq-item.active{ text-decoration:none; position:relative; z-index:20; background:#d8f4f2; border-color:#88c6c1; color:#0C9C92; }
+.ui-seq .seq-item.active [class^="icon-"],
+.ui-seq .seq-item.active [class*="icon-"]{ color:#0C9C92; }

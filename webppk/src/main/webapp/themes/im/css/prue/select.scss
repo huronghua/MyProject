@@ -1,0 +1,69 @@
+.selectContainer{
+  position:relative;
+  min-width:70px;
+  display:inline-block;
+  _display:inline;
+  _zoom:1;
+  z-index:1000;
+  background:#FFF;
+  border:1px solid #CCC;
+}
+.selectContainer input{
+}
+.selectContainer .selectOption{
+  min-width:180px;
+  padding:0 5px;
+  line-height:25px;
+  height:25px;
+  white-space:nowrap;
+  overflow:hidden;
+  border:none;
+  z-index:1000;
+}
+.selectContainer .shows{
+  width:20px;
+  height:20px;
+  position:absolute;
+  right:2px;
+  top:2px;
+  background:url(images/select-ico.gif) no-repeat center center;
+}
+.selectContainer .icon-arrow-drop-down{
+  position:absolute;
+  right:4px;
+  top:4px;
+  font-size:16px;
+}
+.selectContainer ul{
+  position:absolute;
+  width:100%;
+  top:25px;
+  left:-1px;
+  min-width:72px;
+  border:1px solid #CCC;
+  display:none;
+}
+.selectContainer ul li{
+  padding:0 5px;
+  border-bottom:1px solid #EEE;
+  border-top:none;
+  line-height:25px;
+  background:#FFF;
+  cursor:pointer;
+}
+.selectContainer ul li:hover{
+  background:#F5F5F5;
+}
+.selectContainer ul li:last-child{
+  border-bottom:none;
+}
+.selectContainer ul.dis{
+  display:block!important;
+}
+.selectContainer ul.undis{
+  display:noneimportant;
+}
+.zIndex{
+  z-index:10000!important;
+}
+.selectContainer .gray{color:#DDD}

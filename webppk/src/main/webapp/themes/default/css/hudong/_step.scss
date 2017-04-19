@@ -1,0 +1,20 @@
+.ui-step{ margin:0 auto 20px auto; width:100%; @include clearfix();}
+.ui-step li{ position:relative; margin-right:-1px; height:70px; overflow:hidden; float:left; }
+.ui-step li .line{ position:absolute; top:18px; left:0; width:100%; height:4px; line-height:1px; background:#ddd; }
+.ui-step .start .line,
+.ui-step .end .line{ width:50%; }
+.ui-step li .num{ position:absolute; top:0; left:50%; margin-left:-20px; display:block; width:32px; height:32px; background:#fff; border:4px solid #ddd; border-radius:30px; text-align:center; font:14px/32px Verdana, Geneva, sans-serif; color:#aaa; }
+.ui-step .start .line{ left:50%; }
+.ui-step .end .line{ left:0; }
+.ui-step .text p{ position:absolute; width:100%; top:50px; text-align:center; color:#666; }
+
+.ui-step .done .line{ background:#E58892; }
+.ui-step .done .num{ border-color:#E58892; color:#E58892; }
+.ui-step .done .text p{ color:#E58892; }
+
+.ui-step .active .line{ background:#bc1225; }
+.ui-step .active .num{ border-color:#bc1225; color:#bc1225; }
+.ui-step .active .text p{ color:#bc1225; }
+
+.ui-step.step-3 li{ width:33.3%; }
+.ui-step.step-4 li{ width:25%; }

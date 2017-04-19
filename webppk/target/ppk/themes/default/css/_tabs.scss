@@ -1,0 +1,66 @@
+.ui-tab-tag:before,
+.ui-tab-tag:after { content: ""; display: table; line-height: 0; }
+.ui-tab-tag:after { clear: both; }
+.ui-tab-tag { margin-bottom:10px; }
+.ui-tab-tag .nav-tabs { border-bottom:1px solid #e1e1e1; font-size: 14px; }
+.ui-tab-tag .nav-tabs li { margin:0 5px -1px 0;  height:30px; border:1px solid #fff; border-bottom:none 0; cursor:pointer; line-height:30px; float:left; }
+.ui-tab-tag .nav-tabs li:hover { background:#f5f5f5; }
+.ui-tab-tag .nav-tabs li.active { border-color:#e1e1e1;  border-bottom:1px solid #fff; _margin-bottom:-1px; font-weight:bold; }
+.ui-tab-tag .nav-tabs li.active:hover { background:none; }
+.ui-tab-tag .nav-tabs li a {display: inline-block;padding:0 10px;min-width:60px;text-align:center;color:#666; text-decoration:none; }
+.ui-tab-tag .nav-tabs li.active a { color:#0C9C92; border-top:2px solid #0C9C92;margin: -1px;}
+.ui-tab-tag .nav-tabs li a .icon,
+.ui-tab-tag .nav-tabs li a .icon:hover { margin-right:5px; background-image:url(/themes/default/img/icon-16.png); }
+.ui-tab-tag .nav-tabs li.active a .icon,
+.ui-tab-tag .nav-tabs li.active a .icon:hover { background-image:url(/themes/default/img/icon-16-hover.png); }
+.ui-tab-tag .nav-tabs li a .num { display:inline-block; margin-left:3px; padding:0 8px; background:#999; font:10px/18px "\5FAE\8F6F\96C5\9ED1"; color:#fff; font-weight:normal; border-radius:10px; }
+.ui-tab-tag .nav-tabs li.active a .num { background:#0C9C92; }
+.ui-tab-tag .nav-tabs li [class*=" icon-"],
+.ui-tab-tag .nav-tabs li [class^="icon-"] { margin-right:5px; }
+
+
+.ui-tab-tag.big .nav-tabs li {background:#eee;border-color:#eee;font-size:14px;height:40px;line-height:40px;margin-bottom:0;}
+.ui-tab-tag.big .nav-tabs li:hover { background:#ddd;border-color:#ddd;z-index:100; }
+.ui-tab-tag.big .nav-tabs li.active,
+.ui-tab-tag.big .nav-tabs li.active:hover {margin-bottom:-1px;background:#0C9C92; border:1px solid #0C9C92;font-weight:bold; position:relative; z-index:30; }
+.ui-tab-tag.big .nav-tabs li a {padding:0 20px;color:#666;background: none;border:none; }
+.ui-tab-tag.big .nav-tabs li.active a { color:#fff;border:none;}
+.ui-tab-tag.big .nav-tabs li.more{margin:0;background:none;border:none 0;float:right;}
+.ui-tab-tag.big .nav-tabs li.more a{padding:0;color:#333;}
+.ui-tab-tag.big .nav-tabs li.more a:hover{color:#0C9C92;}
+
+
+.ui-tab-tag.index .nav-tabs { border:none 0; font-size: 14px; }
+.ui-tab-tag.index .nav-tabs li { margin:0 5px 0 0; height:30px;line-height:30px;border:none 0;background:#eee;border-radius:4px;}
+.ui-tab-tag.index .nav-tabs li:hover { background:#ddd; }
+.ui-tab-tag.index .nav-tabs li.active { border:none 0; _margin-bottom:0;background:#0C9C92;color:#fff;}
+.ui-tab-tag.index .nav-tabs li a {display: inline-block;padding:0 15px; color:#333; text-decoration:none; }
+.ui-tab-tag.index .nav-tabs li.active a { color:#fff; margin:0;border:none 0;}
+
+
+.ui-tab-tag .nav-tabs li.fn-right { float: right; }
+.ui-tab-tag .nav-tabs li.fn-right a:hover,.ui-tab-tag .nav-tabs li.fn-right:hover { background: #fff; }
+.ui-tabs:before,
+.ui-tabs:after { content: ""; display: table; line-height: 0; }
+.ui-tabs:after { clear: both; }
+.ui-tabs{ border-bottom:1px solid #333; font-size: 14px; margin-bottom: 20px; }
+.ui-tabs .nav-tabs { font-size: 15px; }
+.ui-tabs .nav-tabs li { margin:0 15px 0 0; padding:0 15px; height:40px; cursor:pointer; line-height:40px; float:left; }
+.en .ui-tabs .nav-tabs { font-size: 16px; }
+.en .ui-tabs .nav-tabs li { margin:0;}
+.ui-tabs .nav-tabs li:hover { background:#f5f5f5; }
+.ui-tabs .nav-tabs li.active { _margin-bottom:-1px; font-weight:bold; }
+.ui-tabs .nav-tabs li.active:hover { background:none; }
+.ui-tabs .nav-tabs li a { color:#333; text-decoration:none; }
+.ui-tabs .nav-tabs li.active a { color:#0C9C92; font-weight: bold; }
+.ui-tabs .nav-tabs li i{ display: inline-block; margin-right: 10px; }
+.ui-tab-tools{ padding:5px 10px; background:#f4f4f4; margin-bottom: 14px; }
+.ui-tab-tools a:hover{ text-decoration: underline; }
+
+.tab2 { margin-bottom:1px; }
+.tab2 li{ float: left; margin-right: 1px; position:relative; }
+.tab2 a{ display: inline-block; color:#FFF; background: #333; padding:8px 22px; font-size:14px; text-decoration: none; cursor:pointer; position:relative; font-family: "\5FAE\8F6F\96C5\9ED1"; }
+.tab2 .active a{ background:#0C9C92; color:#FFF; cursor:pointer; text-decoration: none; position: relative; }
+.tab2 .active b{ position:absolute; bottom:0; left:50%; border-color:transparent transparent #fff transparent; border-style:solid; border-width:5px; display:inline-block; }
+.tab2 i { margin-right: 10px; }
+

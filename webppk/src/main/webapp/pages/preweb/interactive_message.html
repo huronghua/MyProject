@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>交互模块-留言模块</title>
+ <!-- Bootstr ap -->
+
+<link href="css/fontsico.css" rel="stylesheet">
+<link rel="stylesheet" href="css/jquery.cxcolor.css">
+<link rel="stylesheet" href="css/global.css">
+<link href="css/layout.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script src="js/jquery.cxcolor.min.js"></script>
+<script src="js/jquery.easydropdown.js"></script>
+<link rel="stylesheet" href="css/easydropdown.css"/>
+</head>
+<body>
+
+
+<!------------------------  留言模块 模块  -------------------------->
+<div class="popup popupbg distable" >
+   <div class="distablediv">
+   <div class="popupcontainer">
+       <div class="poputitlee clearboth">
+         <div class="pull-left poputitlee_name">留言模块</div>
+          <div class="pull-right ">
+             <div class="close  icon-iconfont-guanbi"></div>
+          </div>
+       </div>
+       <div class="popupcontent clearboth">
+        <div class="pull-left promptset">
+         <form action="" method="get" enctype="multipart/form-data">
+          <!------------------------------------->
+          <div class="popup-modularsettings  clearboth">
+          
+             <!---------------form item  ---------------------->
+             <div class="set_item clearboth">
+                 <div class="item_keyname pull-left">模块标题：</div>
+                 <div class=" pull-left form-marginrigt">
+                   <label for="textfield"></label>
+                   <input type="text" name="textfield" id="textfield" class="form-control form-contro_style1 form-w_3">
+                 </div>
+                 <div class="pull-left cim_dun checkboxchoice_box">
+                   <div class="checkboxchoice_item clearboth">
+                       <span class="checkboxchoice_co pull-left">
+                          <input type="checkbox" name="checkbox" id="checkbox" class="choiceclass">
+                       </span>
+                       <label class="checkboxchoice_name pull-left" for="checkbox"> 
+                          <span class="checkboxchoice_name_t">显示</span></label>
+                   </div>
+               </div>
+            </div>  
+            <!---------------form-item  end  ---------------------->
+            <!---------------form item  ---------------------->
+             <div class="set_item clearboth">
+                 <div class="item_keyname pull-left">模块尺寸：</div>
+                 <div class=" pull-left t">
+                     <label for="textfield"></label>
+                     <input type="number" name="textfield" id="textfield" class="form-control form-contro_style1 form-w_0">
+                 </div>
+                 <div class=" pull-left form-marginrigt">
+                   <span class="dropdown-inlineblock" >
+                     <select name=""  tabindex="4" class="dropdown rimsn ">
+                        <option value="April">像素</option>
+                        <option value="5">百分比</option>
+                      </select>
+                    </span>
+                  </div>
+                  <div class=" pull-left t">
+                     <label for="textfield"></label>
+                     <input type="number" name="textfield" id="textfield" class="form-control form-contro_style1 form-w_0">
+                 </div>
+                 <div class=" pull-left form-marginrigt">
+                   <span class="dropdown-inlineblock" >
+                     <select name=""  tabindex="4" class="dropdown rimsn ">
+                        <option value="April">像素</option>
+                        <option value="5">百分比</option>
+                      </select>
+                    </span>
+                  </div>
+            </div>  
+            <!---------------form-item  end  ----------------------> 
+         </div>
+          <!------------------内容设置 ------------------->
+          <div class="popup_main scrollInner scrollInner popupmain_ptop">
+            <!---------------form item  ---------------------->
+             <div class="set_item  clearboth set_messageitem">
+                 <div class="item_keyname item_keyname_twin pull-left"><span>姓</span>名：</div>
+                 <div class=" pull-left set_picture_background_style radiochoice_box setgeneratecodr">
+                  <div class="pull-left radiochoice_item on setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab1_1" id="templatetab1_1" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab1_1">显示</label>
+                  </div>
+                 <div class="pull-left radiochoice_item setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab1_2" id="templatetab1_2" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab1_2">不显示</label>
+                 </div>
+                 <div class="pull-left radiochoice_item setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab1_3" id="templatetab1_3" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab1_3">自定义</label>
+                 </div>
+                 
+               </div>
+               <div class="pull-left message_imun">
+                     <label for="textfield"></label>
+                   <input type="text" name="textfield" id="textfield" class="form-control form-contro_style1 form-w_1"  disabled>
+               </div>
+            </div>  
+            <!---------------form-item  end  ---------------------->
+            <!---------------form item  ---------------------->
+             <div class="set_item  clearboth set_messageitem" >
+                 <div class="item_keyname item_keyname_twin pull-left"><span>昵</span>称：</div>
+                 <div class=" pull-left set_picture_background_style radiochoice_box setgeneratecodr">
+                  <div class="pull-left radiochoice_item on setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab2_1" id="templatetab2_1" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab2_1">显示</label>
+                  </div>
+                 <div class="pull-left radiochoice_item setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab2_2" id="templatetab2_2" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab2_2">不显示</label>
+                 </div>
+                 <div class="pull-left radiochoice_item setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab2_3" id="templatetab2_3" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab2_3">自定义</label>
+                 </div>
+               </div>
+               <div class="pull-left message_imun">
+                     <label for="textfield"></label>
+                   <input type="text" name="textfield" id="textfield" class="form-control form-contro_style1 form-w_1" disabled >
+               </div>
+            </div>  
+            <!---------------form-item  end  ---------------------->
+            <!---------------form item  ---------------------->
+             <div class="set_item  clearboth set_messageitem" >
+                 <div class="item_keyname item_keyname_twin pull-left"><span>电</span>话：</div>
+                 <div class=" pull-left set_picture_background_style radiochoice_box setgeneratecodr">
+                  <div class="pull-left radiochoice_item on setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab3_1" id="templatetab3_1" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab3_1">显示</label>
+                  </div>
+                 <div class="pull-left radiochoice_item setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab3_2" id="templatetab3_2" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab3_2">不显示</label>
+                 </div>
+                 <div class="pull-left radiochoice_item setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab3_3" id="templatetab3_3" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab3_3">自定义</label>
+                 </div>
+               </div>
+               <div class="pull-left message_imun">
+                     <label for="textfield"></label>
+                   <input type="text" name="textfield" id="textfield" class="form-control form-contro_style1 form-w_1" disabled >
+               </div>
+            </div>  
+            <!---------------form-item  end  ---------------------->
+            <!---------------form item  ---------------------->
+             <div class="set_item  clearboth set_messageitem" >
+                 <div class="item_keyname item_keyname_twin pull-left"><span>邮</span>箱：</div>
+                 <div class=" pull-left set_picture_background_style radiochoice_box setgeneratecodr">
+                  <div class="pull-left radiochoice_item on setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab4_1" id="templatetab4_1" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab4_1">显示</label>
+                  </div>
+                 <div class="pull-left radiochoice_item setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab4_2" id="templatetab4_2" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab4_2">不显示</label>
+                 </div>
+                 <div class="pull-left radiochoice_item setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab4_3" id="templatetab4_3" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab4_3">自定义</label>
+                 </div>
+               </div>
+               <div class="pull-left message_imun">
+                     <label for="textfield"></label>
+                   <input type="text" name="textfield" id="textfield" class="form-control form-contro_style1 form-w_1" disabled >
+               </div>
+            </div>  
+            <!---------------form-item  end  ---------------------->
+            <!---------------form item  ---------------------->
+             <div class="set_item  clearboth set_messageitem" >
+                 <div class="item_keyname item_keyname_twin pull-left"><span>主</span>题：</div>
+                 <div class=" pull-left set_picture_background_style radiochoice_box setgeneratecodr">
+                  <div class="pull-left radiochoice_item on setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab5_1" id="templatetab5_1" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab5_1">显示</label>
+                  </div>
+                 <div class="pull-left radiochoice_item setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab5_2" id="templatetab5_2" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab5_2">不显示</label>
+                 </div>
+                 <div class="pull-left radiochoice_item setgeneratecodr_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab5_3" id="templatetab5_3" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab5_3">自定义</label>
+                 </div>
+               </div>
+               <div class="pull-left message_imun">
+                     <label for="textfield"></label>
+                   <input type="text" name="textfield" id="textfield" class="form-control form-contro_style1 form-w_1" disabled >
+               </div>
+            </div>  
+            <!---------------form-item  end  ---------------------->
+          </div>
+         <div class="form-botton">
+              <input type="submit" name="button" id="button" value="确定提交" class="btn btn_a">
+              <input type="reset" name="button" id="button" value="重置" class="btn btn_b">
+         </div>
+         
+         </form>
+         </div>
+         <div class="pull-left promptpreview">
+            <div class="promptpreview_title text-center">效果预览</div>
+            <div class="promptpreview_con  distable text-center">
+               <div class="distablediv text-left">
+                  <div class="mod_message">
+                  <form action="" method="get">
+                     <div class="mod_message_group">
+                        <div class="mod_message_item">
+                           <div class="mod_message_keft">姓名：</div>
+                           <div class="mod_message_mton">
+                               <input name="" type="text" id="" class="mod_message_tent" >
+                           </div>
+                        </div>
+                        <div class="mod_message_item">
+                           <div class="mod_message_keft">昵称：</div>
+                           <div class="mod_message_mton">
+                               <input name="" type="text" id="" class="mod_message_tent" >
+                           </div>
+                        </div>
+                        <div class="mod_message_item">
+                           <div class="mod_message_keft">电话：</div>
+                           <div class="mod_message_mton">
+                               <input name="" type="text" id="" class="mod_message_tent" >
+                           </div>
+                        </div>
+                        <div class="mod_message_item">
+                           <div class="mod_message_keft">邮箱：</div>
+                           <div class="mod_message_mton">
+                               <input name="" type="text" id="" class="mod_message_tent" >
+                           </div>
+                        </div>
+                        <div class="mod_message_item">
+                           <div class="mod_message_keft">主题：</div>
+                           <div class="mod_message_mton">
+                               <input name="" type="text" id="" class="mod_message_tent" >
+                           </div>
+                        </div>
+                        <div class="mod_message_item">
+                           <div class="mod_message_keft">内容：</div>
+                           <div class="mod_message_mton">
+                               <textarea name="" cols="" rows="3" class="mod_message_tent" ></textarea>
+                           </div>
+                        </div>
+                     </div> 
+                     <div class="mod_message_gbuton">
+                        <input type="button" id="" name="" class="pew_massge_btn pew_massge_btn_a" value="提交"/>
+                        <input type="reset" id="" name="" class="pew_massge_btn pew_massge_btn_b" value="重置"/>
+                     </div>
+                   </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+</div>
+<script>
+$("#bgcolor").cxColor();
+</script>
+<script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+</body>
+
+</html>

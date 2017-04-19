@@ -1,0 +1,27 @@
+/* select */
+.ui-select { display:inline-block; *display:inline; *zoom:1; padding-right:19px; background:#fff; position:relative; }
+.ui-select a { color:#7d7d7d; font-size:12px; white-space:nowrap; text-decoration:none; }
+.ui-select a:hover { text-decoration:none; }
+a.ui-select-trigger { position:relative; display:inline-block; *display:inline; *zoom:1; width:98%; border:1px solid #ccc; height:28px; line-height:28px; text-indent:5px; }
+a.ui-select-trigger span{ padding-right:10px; }
+a.ui-select-trigger i { position:absolute; top:-1px; right:-20px; padding:0 5px; border:1px solid #ccc; border-left:none 0; line-height:28px; text-indent:0; font-size:14px; cursor:pointer; background:-webkit-linear-gradient(top, #fbfbfb, #f3f3f3); background:-moz-linear-gradient(top, #fbfbfb, #f3f3f3); filter:progid:DXImageTransform.Microsoft.Gradient(startColorstr=#fbfbfb, endColorstr=#f3f3f3); }
+a.ui-select-trigger:hover{ border-color:#999; }
+.ui-select-content { display:none; position:absolute; width:98%; margin:-1px 0 0; padding:0; background:#fff; list-style:none; border:1px solid #ccc; }
+.ui-select-item a { display:block; line-height:28px; text-indent:5px; }
+.ui-select-item a:hover,
+.ui-select-item-hover a { background:#f2f2f2; }
+.ui-select:hover .ui-select-content { display:block; top:100%; left:0; }
+.ie7 a.ui-select-trigger{ float:left; }
+.ie7 a.ui-select-trigger i{ right:-24px; }
+.ui-select.small { height:26px; }
+.ui-select.small a.ui-select-trigger,
+.ui-select.small a.ui-select-trigger i{ height:24px; line-height:24px; }
+.ui-select.dis,
+.ui-select.dis a.ui-select-trigger,.ui-select.dis a.ui-select-trigger:hover { background:#F0F0F0; border-color:#cacaca; color:#aaa; cursor:default; }
+.ui-select.dis a.ui-select-trigger i{ cursor:default; }
+.ui-select.dis .ui-select-content,
+.ui-select.dis:hover .ui-select-content { display:none; }
+.ui-select.dis.default,
+.ui-select.dis.default a.ui-select-trigger,
+.ui-select.dis.default a.ui-select-trigger:hover{ border-color:#fff; background:#fff; }
+.ui-select.dis.default a i{ display:none; }

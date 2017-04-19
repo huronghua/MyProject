@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?ibjfje');
+    src:    url('../fonts/icomoon.eot?ibjfje#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?ibjfje') format('truetype'),
+        url('../fonts/icomoon.woff?ibjfje') format('woff'),
+        url('../fonts/icomoon.svg?ibjfje#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iconfont-shouye:before {
+    content: "\e900";
+}
+.icon-iconfont-add:before {
+    content: "\e901";
+}
+.icon-iconfont-guanggao:before {
+    content: "\e902";
+}
+.icon-iconfont-huiyuan:before {
+    content: "\e903";
+}
+.icon-iconfont-logo14:before {
+    content: "\e904";
+}
+.icon-iconfont-moban:before {
+    content: "\e905";
+}
+.icon-iconfont-rizhi:before {
+    content: "\e906";
+}
+.icon-iconfont-xiaoxi:before {
+    content: "\e907";
+}
+.icon-iconfont-yangshiku:before {
+    content: "\e908";
+}
+.icon-iconfont-yonghu:before {
+    content: "\e909";
+}
+

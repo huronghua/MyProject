@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+  <classPathEntry  location="C:/Users/eihoo-02/.m2/repository/mysql/mysql-connector-java/5.1.36/mysql-connector-java-5.1.36.jar"/>  
+  <context id="context1" >
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.1.112:3306/ppk" userId="root" password="lining" />
+    <javaModelGenerator targetPackage="com.sk.ppk.model" targetProject="ppk" />
+    <sqlMapGenerator targetPackage="com.sk.ppk.mapping" targetProject="ppk" />
+    <javaClientGenerator targetPackage="com.sk.ppk.dao" targetProject="ppk" type="XMLMAPPER" />
+<!--     <table  -->
+<!--     	tableName="SK_TABLETS_AREA" domainObjectName="TabletsArea" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"> -->
+<!--     </table>  -->
+<!--     <table  -->
+<!--     	tableName="SK_TABLETS" domainObjectName="Tablets" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"> -->
+<!--     </table>  -->
+     <table tableName="templateinformation" domainObjectName="templateinformation" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"> 
+    </table>  
+ <!--    <table 
+    	tableName="sk_role" domainObjectName="Role" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="true" selectByExampleQueryId="false">
+    </table>  -->
+  </context>
+</generatorConfiguration>

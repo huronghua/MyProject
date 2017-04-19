@@ -1,0 +1,112 @@
+<div class="popup popupbg distable" id='articlelayermodulepop' style="display: none">
+   <div class="distablediv">
+   <div class="popupcontainer">
+       <div class="poputitlee clearboth">
+         <div class="pull-left poputitlee_name">浮层文章模块</div>
+          <div class="pull-right ">
+             <div class="close  icon-iconfont-guanbi"></div>
+          </div>
+       </div>
+       <div class="popupcontent">
+         <form action="" method="get" enctype="multipart/form-data">
+          <!------------------------------------->
+          <div class="popup-modularsettings  clearboth">
+          
+             <!---------------form item  ---------------------->
+             <div class="set_item clearboth">
+                 <div class="item_keyname pull-left">模块标题：</div>
+                 <div class=" pull-left form-marginrigt">
+                   <label for="textarticlelayername"></label>
+                   <input type="text" class="easyui-textbox" name="textarticlelayername" id="textarticlelayername" 
+                   style="width: 300px; height: 30px" data-options="required:true">
+                 </div>
+                 <div class="pull-left cim_dun checkboxchoice_box">
+                   <div class="checkboxchoice_item clearboth">
+                       <span class="checkboxchoice_co pull-left">
+                          <input type="checkbox" name="checkbox" id="checkbox" class="choiceclass">
+                       </span>
+                       <label class="checkboxchoice_name pull-left" for="checkbox"> 
+                          <span class="checkboxchoice_name_t">显示</span></label>
+                   </div>
+               </div>
+            </div>  
+            <!---------------form-item  end  ---------------------->
+            <!---------------form item  ---------------------->
+             <div class="set_item clearboth">
+                 <div class="item_keyname pull-left">模块尺寸：</div>
+                 <div class=" pull-left t">
+                     <label for="textfield"></label>
+                     <input class="easyui-numberspinner" id="numberarticlelayerwidth"
+							style="width: 100px; height: 30px"
+							data-options="required:true"></input>
+                 </div>
+                 <div class=" pull-left form-marginrigt">
+                   <span class="dropdown-inlineblock" >
+                     <select class="easyui-combobox" name="droparticlelayerwidth"
+					  style="width: 90px; height: 30px"
+					  data-options="required:true">
+                        <option value="0">像素</option>
+                        <option value="1">百分比</option>
+                      </select>
+                    </span>
+                  </div>
+                  <div class=" pull-left t">
+                     <label for="numberarticlelayerheight"></label>
+                     <input class="easyui-numberspinner" id="numberarticlelayerheight"
+							style="width: 100px; height: 30px"
+							data-options="required:true"></input>
+                 </div>
+                 <div class=" pull-left form-marginrigt">
+                   <span class="dropdown-inlineblock" >
+                     <select class="easyui-combobox" name="droparticlelayerheight"
+					  style="width: 90px; height: 30px"
+					  data-options="required:true">
+                        <option value="0">像素</option>
+                        <option value="1">百分比</option>
+                      </select>
+                    </span>
+                  </div>
+            </div>  
+            <!---------------form-item  end  ---------------------->
+              
+         </div>
+         <!------------------内容设置 ------------------->
+         <div class="popup_main">
+            <!---------------form item  ---------------------->
+             <div class="set_item set_backgroundimages_item clearboth">
+                 <div class="item_keyname pull-left">跳转链接：</div>
+                 <div class="pull-left form-marginrigt" >
+                   <label for="textarticlelayerurl"></label>
+                   <input type="text" class="easyui-validatebox" name="textarticlelayerurl" id="textarticlelayerurl" 
+                   style="width: 300px; height: 30px" data-options="required:true,validType:'url'">
+               </div>
+               <div class="pull-left">
+                  <span class="dropdown-inlineblock form-w_2" >
+                      <select class="easyui-combobox" name="droparticlenoticewidth"
+					  style="width: 200px; height: 30px"
+					  data-options="required:true">
+                        <option value="April">选择栏目</option>
+                        <option value="5">首页</option>
+                      </select>
+                    </span>
+               </div>
+            </div>  
+            <!---------------form-item  end  ---------------------->
+           <!---------------form item  ---------------------->
+             <div class="set_item set_backgroundimages_item clearboth">
+                 <div class="item_keyname pull-left">模块内容：</div>
+                 <div class="pull-left  " >
+                   <textarea name="textareaarticlelayer" id="textareaarticlelayer" cols="" rows="15" class="form-w_8"></textarea>
+               </div>
+            </div>  
+            <!---------------form-item  end  ---------------------->
+            </div>
+         <div class="form-botton">
+              <input type="button" name="btnarticlelayersubmit" id="btnarticlelayersubmit" value="确定提交" class="btn btn_a">
+              <input type="reset" name="button" id="button" value="重置" class="btn btn_b">
+         </div>
+         </form>
+      </div>
+   </div>
+   </div>
+</div>

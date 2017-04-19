@@ -1,0 +1,54 @@
+.head { width: 100%; min-width: 990px; background-color: $gray-dark; box-shadow: 0 0 3px rgba(51,51,51,0.75); overflow: visible; position: fixed; right: 0; top: 0; z-index: 8000; }
+.head-con { margin: 0 auto; z-index: 1970; position: relative; width:1000px; }
+.head-con .logo,.head-con #menu,.head-con .head-so { float: left; }
+.head-con .head-per { float: right; }
+.head-con .logo{ border-right:1px solid $gray; height: 50px; }
+.head-con .logo a{ display: inline-block; }
+.head-con .logo a img { width: 120px; height: 50px; border-right: 1px solid $gray-darker; }
+
+.menu ul li { float: left; _height: 40px; position: relative; z-index: 10}
+.menu ul li a { margin-right: 1px; padding: 0 18px; _padding: 10px; _float: left; _height: 20px; color: $white; line-height: 50px; display: block; text-decoration: none; font-size: 14px; font-family: "\5FAE\8F6F\96C5\9ED1"}
+.menu ul li a:hover,#menu ul li:hover a { color: $white; background: $brand-primary; text-decoration: none}
+.menu ul li a:hover i,#menu ul li:hover a i { background-position: 0 -5px}
+.menu ul li a.active { background: $brand-primary}
+
+.head-con .changeL{position:relative;float:left;margin-left:20px;color:#fff;z-index:8005;padding-bottom:6px;background:url(/themes/default/img/head-bg.png) 0 30px;}
+.head-con .changeL span{display:block;width:30px;line-height:30px;text-align:center;background:#f5a743;cursor:pointer;}
+.head-con .changeL ul{display:none;position:absolute;top:100%;left:0;margin-top:-6px;width:100%;background:url(/themes/default/img/head-bg.png) 0 30px;padding-bottom:6px;}
+.head-con .changeL ul li{line-height:30px;text-align:center;cursor:pointer;background:#f5a743;}
+.head-con .changeL:hover ul{display:block;}
+.head-con .changeL:hover span{background:#f5a743;}
+.head-con .changeL span:hover,
+.head-con .changeL ul li:hover{background:#d4841d}
+
+
+.head-per a,.head-per .per-cen { float: left; }
+.head-per .per-cen img,.head-per .per-cen span { float: left; }
+.head-per .per-cen img { margin-right: 5px; width: 20px; height: 20px; overflow: hidden; }
+.head-per .per-cen { padding: 15px 18px; color: $white; line-height: 20px; position: relative; }
+.head-per .per-cen:hover { background: $brand-primary; text-decoration: none; }
+.head-per .per-cen a { color: $white; display: block; }
+.head-per .per-cen .per-con { display: none; position: absolute; top: 100%; left: 0; min-width: 100%; background: $white; -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.2); -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.2); box-shadow: 0 5px 10px rgba(0,0,0,0.2); z-index: 8002; }
+.head-per .per-cen:hover .per-con { display: block; }
+.head-per .per-cen .per-con a { padding: 3px; color: #333; cursor: pointer; float: inherit; border-bottom: 1px dotted #DDDDDD; }
+.head-per .per-cen .per-con a span { color: #bc1225; float: right; }
+.head-per .per-cen .per-con a:hover,.head-per .per-cen .per-con a:hover span { background: #bc1225; color: $white; }
+.head-per .set,.head-per .out { display: block; margin-left: 1px; font-size: 16px; text-decoration: none; transition: all 0.3s ease-out 0s; }
+.head-per .set { margin-top: 7px; color: #ccc; }
+.head-per .set:hover { color: $white; }
+.head-per .out { margin-bottom: -5px; background-color: #9f0213; color: #DDD; padding: 17px 5px 16px; }
+.head-per .out:hover { background: #88000f; }
+.ie7 .head-per .out { padding-left: 7px; }
+.ie7 .head-per .set { margin-top: 12px; }
+.ie7 .head-per .out { padding-top: 16px; padding-bottom: 16px; }
+
+.main{ width: 1000px; min-width: 1000px; background: #FFF; box-shadow: 0 0 5px #666; margin:70px auto 10px auto; }
+.main-hd{ background: $gray-lighter;padding:10px 20px;font-size: $font-size-large;}
+.main-hd a{display: inline-block;font-size: $font-size-h2;bottom: -3px;left:-10px;position: relative;padding:0px 10px;}
+.main-hd a:hover{background: $gray-light;color:$white;}
+.main-bd{ padding:20px;@include clearfix(); }
+.main-bd-left{width:200px;float:left;margin-right: 20px;}
+.main-bd-right{width:740px;float:left;}
+
+.footer{ width: 100%; min-width: 1000px; padding: 20px 0; }
+.footer ul{ margin: 0 auto; text-align: center; line-height: 1.5em; }

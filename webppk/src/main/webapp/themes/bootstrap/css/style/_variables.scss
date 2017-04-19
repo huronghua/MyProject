@@ -1,0 +1,142 @@
+$bootstrap-sass-asset-helper: false !default;
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
+$brand-theme:           #f54f59 !default;
+$brand-match:           #2dbab4 !default;
+$brand-dark:            #333 !default;
+
+
+$brand-theme-lighter:    lighten($brand-theme, 33.5%) !default;
+$brand-theme-light:      lighten($brand-theme, 15%) !default;
+$brand-theme-dark:       darken($brand-theme, 10%) !default;
+$brand-match-lighter:    lighten($brand-match, 33.5%) !default;
+$brand-match-light:      lighten($brand-match, 15%) !default;
+$brand-match-dark:       darken($brand-match, 10%) !default;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #fff !default;
+
+
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+
+$border-radius-base:        4px !default;
+$border-radius-all:        100% !default;
+
+
+//** Global textual link color.
+$link-color:            $brand-match !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+$btn-font-weight:                normal !default;
+
+
+$btn-theme-color:              #fff !default;
+$btn-theme-bg:                 $brand-theme !default;
+$btn-theme-border:             darken($btn-theme-bg, 5%) !default;
+
+$btn-match-color:              #fff !default;
+$btn-match-bg:                 $brand-match !default;
+$btn-match-border:             darken($btn-match-bg, 5%) !default;
+
+$btn-dark-color:              #fff !default;
+$btn-dark-bg:                 $brand-dark !default;
+$btn-dark-border:             darken($btn-dark-bg, 5%) !default;
+
+
+//** Border color for inputs on focus
+$input-border-focus:             #7ddbd7 !default;
+
+
+//** Global color for active items (e.g., navs or dropdowns).
+$component-active-color:    #fff !default;
+//** Global background color for active items (e.g., navs or dropdowns).
+$component-active-bg:       $brand-match !default;
+
+
+
+//== Progress bars
+//
+//##
+
+//** Background color of the whole progress component
+$progress-bg:                 #f5f5f5 !default;
+//** Progress bar text color
+$progress-bar-color:          #fff !default;
+//** Variable for setting rounded corners on progress bar.
+$progress-border-radius:      $border-radius-base !default;
+
+//** Default progress bar color
+$progress-bar-bg:             $brand-theme !default;
+//** Success progress bar color
+$progress-bar-success-bg:     $brand-match !default;
+
+
+
+
+//== List group
+//
+//##
+
+//** Text color of active list items
+$list-group-active-color:       $component-active-color !default;
+//** Background color of active list items
+$list-group-active-bg:          $component-active-bg !default;
+//** Border color of active list elements
+$list-group-active-border:      $list-group-active-bg !default;
+//** Text color for content within active list items
+$list-group-active-text-color:  lighten($list-group-active-bg, 40%) !default;
+
+
+
+//== Badges
+//
+//##
+
+$badge-bg:                    $brand-match-lighter !default;
+//** Badge text color in active nav link
+$badge-active-color:          $link-color !default;
+
+
+
+//== Navs
+//
+//##
+
+
+
+$nav-tabs-active-link-hover-bg:             $body-bg !default;
+$nav-tabs-justified-active-link-border-color:     $body-bg !default;
+
+//== Pills
+$nav-pills-active-link-hover-bg:            $brand-match !default;
+$nav-pills-active-link-hover-color:         $body-bg !default;

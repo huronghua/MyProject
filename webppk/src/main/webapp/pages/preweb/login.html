@@ -1,0 +1,61 @@
+﻿   <!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>用户登录</title>
+<link rel="stylesheet" href="../static/preweb/css/global.css">
+<link href="css/login.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<script type="text/javascript">
+//服务器校验
+function severCheck(){
+	if(check()){
+		var loginname = $("#loginname").val();
+		var password = $("#password").val();
+	}
+}
+</script>
+<body class="loginbody">
+<header class="loginhead">
+   <div class=" text-center"><img src="../static/preweb/images/login_logo.png" width="154" height="53"></div>
+</header>
+<section class="loginwrap  ">
+   <div class="loginin clearboth">
+      <div class="pull-left bna_baner"><img src="../static/preweb/images/bna_baner.jpg"></div>
+     <div class="pull-right login_ftom">
+          <form name="form1" method="post" action="">
+            <div class="loginfron_ico"></div>
+             <div class="loginfron_irem  clearboth">
+               <div class="pull-left from_intico from_nameico"></div>
+               <div class="pull-left from_inp">
+                  <label for="textname"></label>
+                  <input type="text" name="loginname" id="loginname" class="from_bonw"  placeholder="请输入用户名">
+               </div>
+             </div>
+            <div class="loginfron_irem  clearboth">
+               <div class="pull-left from_intico from_passwordico"></div>
+               <div class="pull-left from_inp">
+                  <label for="textname"></label>
+                  <input type="text" name="password" id="password" class="from_bonw"  placeholder="请输入密码">
+               </div>
+             </div>
+             <div class="loginfron_irem clearboth loginfron_button">
+                  <input type="submit" name="button" id="button" value="立即登录" class="loginfron_btm">
+             </div>
+             <div class="clearboth">
+               <a href="" class="pull-left blue">忘记密码？</a><a href="register.html" class="pull-right red">新用户注册</a>
+             </div>
+          </form>
+     </div>
+   </div>
+</section>
+<footer class="text-center loginbottom">Copyright©2004-2016  eihoo.cn 版权所有 <br>
+技术支持上海爱护我信息技术有限公司   	沪ICP备12018714号-17 </footer>
+</body>
+</html>

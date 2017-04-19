@@ -1,0 +1,9 @@
+.tags-box { border:1px solid #cacaca; height:100px; width:300px; }
+.tags-box { padding:4px; border:1px solid #cacaca; height:auto; }
+.tags li ,.tagspan{ float:left; background:#d8f4f2; display:inline-block; padding:2px 4px; margin:5px 0 0 5px; cursor:pointer; position:relative; top:-2px; border: 1px solid #88c6c1; text-overflow:ellipsis; -o-text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.tags li:hover,.tagspan:hover{border-color:#0C9C92;}
+.tags li a,.deleteTag { position:relative; top:1px; margin-left:3px; text-decoration:none; color:#88c6c1; font-size:14px;}
+.tags li:hover a,.tagspan:hover .deleteTag{ color:#0C9C92; }
+.tags li.active{ background:#0C9C92; color:#fff; }
+
+.tags li{border:none;border-radius:6px;}

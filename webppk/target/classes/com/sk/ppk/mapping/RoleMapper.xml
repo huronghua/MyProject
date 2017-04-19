@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sk.ppk.dao.RoleMapper">
+	<resultMap id="BaseResultMap" type="com.sk.ppk.model.Role">
+		<id column="Id" property="id" jdbcType="INTEGER" />
+		<result column="RoleType" property="roletype" jdbcType="INTEGER" />
+		<result column="RoleName" property="rolename" jdbcType="VARCHAR" />
+		<result column="Status" property="status" jdbcType="INTEGER" />
+		<result column="SystemConfigure" property="systemconfigure" jdbcType="VARCHAR" />
+		<result column="BasicConfigure" property="basicconfigure" jdbcType="VARCHAR" />
+		<result column="AuthorityConfigure" property="authorityconfigure" jdbcType="VARCHAR" />
+		<result column="CreatUser" property="createuser" jdbcType="VARCHAR" />
+		<result column="CreatTime" property="createtime" jdbcType="TIMESTAMP" />
+		<result column="Authority" property="authority" jdbcType="VARCHAR" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		Id, RoleType,RoleName, Status,SystemConfigure,BasicConfigure,AuthorityConfigure, CreatUser, CreatTime
+	</sql>
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap"
+		parameterType="java.lang.Integer">
+		select
+		<include refid="Base_Column_List" />
+		from role
+		where Id = #{id,jdbcType=INTEGER}
+	</select>
+	<!--显示所有的角色 -->
+	<select id="listAllRole" resultMap="BaseResultMap">
+		select * from role
+	</select>
+
+	<!--根据条件查找角色 -->
+	<select id="selectRoleByCondition" resultMap="BaseResultMap" parameterType="com.sk.ppk.model.Role">
+		select
+		<include refid="Base_Column_List" />
+		from role
+		where roletype=#{roletype} or createuser like
+		CONCAT('%',#{createuser},'%')
+	</select>
+	
+	<!--查询角色记录个数 -->
+	<select id="selectRoleCount" parameterType="java.util.Map" resultType="java.lang.Integer">
+		select count(*) from role
+		 where RoleName like '%${rolename}%'
+           and CreatUser like '%${createuser}%'
+	</select>
+	<!-- 分页查询 -->
+	<select id="selectRolePage" resultMap="BaseResultMap" parameterType="com.sk.ppk.model.Page">
+		select * from role limit #{firstResult},#{maxResults}
+	</select>	
+	
+	<select id="selectAllroleinfo" parameterType="java.util.Map" resultType="java.util.HashMap">
+    select 
+    ID, RoleType, RoleName, CreatUser,CreatTime, 
+    case Status
+      WHEN '0' THEN "启用"
+      WHEN '1' THEN "不启用"
+    end  as Status1
+    from role
+    where RoleName like '%${rolename}%'
+      and CreatUser like '%${creatuser}%'
+      order by CreatTime desc
+    limit #{page},#{rows}  
+  </select>
+  
+  <select id="selectCount" resultType="java.lang.Integer">
+    select 
+    Count(*)
+    from role
+   where RoleName like '%${rolename}%'
+     and CreatUser like '%${createuser}%'
+  </select>
+  	<delete id="deleteAllRole" parameterType="java.lang.Integer">
+		delete from role
+	</delete>
+	<delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+		delete from role
+		where Id = #{id,jdbcType=INTEGER}
+	</delete>
+	<insert id="insert" parameterType="com.sk.ppk.model.Role">
+		insert into role (Id,
+		RoleType, Status,
+		CreateUser, CreateTime, Authority
+		)
+		values
+		(#{id,jdbcType=INTEGER}, #{roletype,jdbcType=INTEGER},
+		#{status,jdbcType=INTEGER},
+		#{createuser,jdbcType=VARCHAR},
+		#{createtime,jdbcType=TIMESTAMP}, #{authority,jdbcType=VARCHAR}
+		)
+	</insert>
+	<insert id="insertRole" parameterType="com.sk.ppk.model.Role">
+		insert into role
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				Id,
+			</if>
+			<if test="roletype != null">
+				RoleType,
+			</if>
+			<if test="rolename != null">
+				RoleName,
+			</if>
+			<if test="status != null">
+				Status,
+			</if>
+			<if test="systemconfigure != null">
+				SystemConfigure,
+			</if>
+			<if test="basicconfigure != null">
+				BasicConfigure,
+			</if>
+			<if test="authorityconfigure != null">
+				AuthorityConfigure,
+			</if>
+			<if test="createuser != null">
+				CreatUser,
+			</if>
+			<if test="createtime != null">
+				CreatTime,
+			</if>
+			<if test="authority != null">
+				Authority,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="roletype != null">
+				#{roletype,jdbcType=INTEGER},
+			</if>
+			<if test="rolename != null">
+				#{rolename,jdbcType=VARCHAR},
+			</if>
+			<if test="status != null">
+				#{status,jdbcType=INTEGER},
+			</if>
+			<if test="systemconfigure != null">
+				#{systemconfigure,jdbcType=VARCHAR},
+			</if>
+			<if test="basicconfigure != null">
+				#{basicconfigure,jdbcType=VARCHAR},
+			</if>
+			<if test="authorityconfigure != null">
+				#{authorityconfigure,jdbcType=VARCHAR},
+			</if>
+			<if test="createuser != null">
+				#{createuser,jdbcType=VARCHAR},
+			</if>
+			<if test="createtime != null">
+				#{createtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="authority != null">
+				#{authority,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+	
+	<insert id="insertSelective" parameterType="com.sk.ppk.model.Role">
+		insert into role
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				Id,
+			</if>
+			<if test="roletype != null">
+				RoleType,
+			</if>
+			<if test="status != null">
+				Status,
+			</if>
+			<if test="createuser != null">
+				CreateUser,
+			</if>
+			<if test="createtime != null">
+				CreateTime,
+			</if>
+			<if test="authority != null">
+				Authority,
+			</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
+			</if>
+			<if test="roletype != null">
+				#{roletype,jdbcType=INTEGER},
+			</if>
+			<if test="status != null">
+				#{status,jdbcType=INTEGER},
+			</if>
+			<if test="createuser != null">
+				#{createuser,jdbcType=VARCHAR},
+			</if>
+			<if test="createtime != null">
+				#{createtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="authority != null">
+				#{authority,jdbcType=VARCHAR},
+			</if>
+		</trim>
+	</insert>
+	
+	<update id="saverole" parameterType="com.sk.ppk.model.Role">
+		update role
+		<set>
+			<if test="roletype != null">
+				RoleType = #{roletype,jdbcType=INTEGER},
+			</if>
+			<if test="rolename != null">
+				RoleName = #{rolename,jdbcType=VARCHAR},
+			</if>
+			<if test="status != null">
+				Status = #{status,jdbcType=INTEGER},
+			</if>
+			<if test="systemconfigure != null">
+				SystemConfigure = #{systemconfigure,jdbcType=VARCHAR},
+			</if>
+			<if test="basicconfigure != null">
+				BasicConfigure = #{basicconfigure,jdbcType=VARCHAR},
+			</if>
+			<if test="authorityconfigure != null">
+				AuthorityConfigure = #{authorityconfigure,jdbcType=VARCHAR},
+			</if>
+			<if test="createuser!= null">
+				CreateUser = #{createuser,jdbcType=VARCHAR},
+			</if>
+			<if test="createtime != null">
+				CreateTime = #{createtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="authority != null">
+				Authority = #{authority,jdbcType=VARCHAR},
+			</if>
+		</set>
+		where Id = #{id,jdbcType=INTEGER}	
+	</update>
+		
+	<update id="updateByPrimaryKeySelective" parameterType="com.sk.ppk.model.Role">
+		update role
+		<set>
+			<if test="roletype != null">
+				RoleType = #{roletype,jdbcType=INTEGER},
+			</if>
+			<if test="status != null">
+				Status = #{status,jdbcType=INTEGER},
+			</if>
+			<if test="createuser!= null">
+				CreateUser = #{createuser,jdbcType=VARCHAR},
+			</if>
+			<if test="createtime != null">
+				CreateTime = #{createtime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="authority != null">
+				Authority = #{authority,jdbcType=VARCHAR},
+			</if>
+		</set>
+		where Id = #{id,jdbcType=INTEGER}
+	</update>
+	<update id="updateByPrimaryKey" parameterType="com.sk.ppk.model.Role">
+		update role
+		set
+		RoleType = #{roletype,jdbcType=INTEGER},
+		Status =
+		#{status,jdbcType=INTEGER},
+		CreateUser = #{createuser,jdbcType=VARCHAR},
+		CreateTime = #{createtime,jdbcType=TIMESTAMP},
+		Authority =
+		#{authority,jdbcType=VARCHAR}
+		where Id = #{id,jdbcType=INTEGER}
+	</update>
+	<!--修改用户的状态为禁用 -->
+	<update id="stopRole">
+		UPDATE `role`
+		SET `Status` = '0'
+		WHERE
+		id =
+		#{id,jdbcType=INTEGER}
+	</update>
+</mapper>

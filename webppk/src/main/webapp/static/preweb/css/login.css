@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+.loginbody{ background:#cee6f6;}
+.loginhead{ padding:15px 0; background:#377ba8;}
+.loginhead{}
+.loginwrap{ background:#fff; width:1200px; margin:50px auto;}
+.loginin{ padding:40px;}
+.bna_baner{ width:665px; height:420px;}
+.login_ftom{ width:400px;height:420px;}
+.loginfron_ico{ width:120px; height:120px; background:#f5f5f5 url(../images/loginfron_ico_img.png) no-repeat center 15px;  border-radius:50%; margin:auto;}
+.loginfron_irem{ border:1px solid #bdbdbd; margin-top:25px;}
+.loginfron_irem .from_bonw{ height:42px; padding-left:10px; width:328px;border:0; display:block;}
+.loginfron_irem .from_intico{ height:46px; width:58px; background-color:#f5f5f5;}
+.loginfron_irem .from_inp{ width:340px;}
+.loginfron_irem.loginfron_button{ margin-top:46px; margin-bottom:15px;}
+.loginfron_irem .loginfron_btm{ display:block; border:0; background:#d32b2b; width:100%; color:#fff; font-size:20px; padding:15px 0; cursor:pointer;}
+.loginfron_irem .from_nameico{ background:#f5f5f5 url(../images/from_nameico.png) center no-repeat;}
+.loginfron_irem .from_passwordico{ background:#f5f5f5 url(../images/from_passwordico.png) center no-repeat;}
+.loginbottom{ line-height:26px;}
+
+.register_min{ background:#767676;}
+.register_left{ width:720px; padding:30px 20px 40px 40px; background:#fff;}
+.register_from{ padding-top:15px;}
+.register_title{ font-size:24px; border-bottom:1px solid #bdbdbd; padding-bottom:15px;}
+.register_item{ margin-top:25px;}
+.register_from_n{ width:100px; font-size:14px; padding-right:10px; line-height:44px;}
+.from_ein{height:42px; padding-left:10px; width:400px;border:1px solid #bdbdbd; display:block;}
+.registerbutton{ padding-left:140px; margin-top:15px;}
+.register_brm{ width:350px; height:58px; border:0; color:#fff; font-size:22px; background:#377ba8;}
+.register_right{ width:360px; min-height:100%; background:#767676; color:#fff; padding:30px;}
+.register_right_man{ font-size:14px; line-height:30px; margin-top:100px; }
+.register_right_user{ margin-top:100px; padding-top:50px; border-top:1px solid #ccc;}
+.register_right_user p{ font-size:15px; line-height:30px; margin-bottom:10px;}
+.register_right_user a{ display:block; text-align:center; color:#fff; font-size:18px; border:1px solid #fff; line-height:58px;}
+

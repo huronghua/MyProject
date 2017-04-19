@@ -1,0 +1,290 @@
+<div class="popup popupbg distable" id='articlenoticemodulepop' style="visibility: hidden">
+	<div class="distablediv">
+		<div class="popupcontainer">
+			<div class="poputitlee clearboth">
+				<div class="pull-left poputitlee_name">公告栏模块</div>
+				<div class="pull-right ">
+					<div class="close  icon-iconfont-guanbi"></div>
+				</div>
+			</div>
+			<div class="popupcontent">
+				<form action="" method="get" enctype="multipart/form-data">
+					<!------------------------------------->
+					<div class="popup-modularsettings  clearboth">
+
+						<!---------------form item  ---------------------->
+						<div class="set_item clearboth">
+							<div class="item_keyname pull-left">模块标题：</div>
+							<div class=" pull-left form-marginrigt">
+								<label for="textfield"></label> <input type="text"
+									class="easyui-textbox" name="textarticlenoticename"
+									id="textarticlenoticename" style="width: 300px; height: 30px"
+									data-options="required:true">
+							</div>
+							<div class="pull-left cim_dun checkboxchoice_box">
+								<div class="checkboxchoice_item clearboth">
+									<span class="checkboxchoice_co pull-left"> <input
+										type="checkbox" name="checkbox" id="checkbox"
+										class="choiceclass">
+									</span> <label class="checkboxchoice_name pull-left" for="checkbox">
+										<span class="checkboxchoice_name_t">显示</span>
+									</label>
+								</div>
+							</div>
+						</div>
+						<!---------------form-item  end  ---------------------->
+						<!---------------form item  ---------------------->
+						<div class="set_item clearboth">
+						
+							<div class="item_keyname pull-left">模块尺寸：</div>
+							<div class=" pull-left t">
+								<label for="textfield"></label> <input
+									class="easyui-numberspinner" id="numberarticlenoticewidth"
+									style="width: 100px; height: 30px" data-options="required:true"></input>
+							</div>
+							<div class=" pull-left form-marginrigt">
+								<span class="dropdown-inlineblock"> <select
+									class="easyui-combobox" name="droparticlenoticewidth"
+									style="width: 90px; height: 30px" data-options="required:true">
+										<option value="0">像素</option>
+										<option value="1">百分比</option>
+								</select>
+								</span>
+							</div>
+							<div class=" pull-left t">
+								<label for="numberarticlenoticeheight"></label> <input
+									class="easyui-numberspinner" id="numberarticlenoticeheight"
+									style="width: 100px; height: 30px" data-options="required:true"></input>
+							</div>
+							<div class=" pull-left form-marginrigt">
+								<span class="dropdown-inlineblock"> <select
+									class="easyui-combobox" name="droparticlenoticeheight"
+									style="width: 90px; height: 30px" data-options="required:true">
+										<option value="0">像素</option>
+										<option value="1">百分比</option>
+								</select>
+								</span>
+							</div>
+						</div>
+						<!---------------form-item  end  ---------------------->
+						<!---------------form item  ---------------------->
+						<div class="set_item set_item_e clearboth">
+							<div class="item_keyname pull-left">模块样式：</div>
+							<div class="set_picture_background_style radiochoice_box">
+								<div class="pull-left radiochoice_item">
+									<span class="radiochoice_co"> <input type="radio"
+										name="templatetab1" id="templatetab1"
+										class="form_choice choiceclass" />
+									</span> <label for="templatetab1">滚动</label>
+								</div>
+								<div class="pull-left radiochoice_item">
+									<span class="radiochoice_co"> <input type="radio"
+										name="templatetab2" id="templatetab2"
+										class="form_choice choiceclass" />
+									</span> <label for="templatetab2">固定</label>
+								</div>
+							</div>
+						</div>
+						<!---------------form-item  end  ---------------------->
+
+					
+					<!------------------内容设置 ------------------->
+					<div>
+						<!---------------form-item  end  ---------------------->
+						<div class="">
+							<a class="btn btn_addnotice" id='linkarticlenotice'> 添加公告</a>
+						</div>
+						<!---------------form-item  end  ---------------------->
+						<div class="set_item set_backgroundimages_item clearboth picture_uploadlist set_finrom_table"
+							id='divarticlenoticemodule'>
+	                        <table class="easyui-datagrid" style="width:700px;height:250px" id='tablearticlenoticemodule'>
+	                        </table>
+							<!-- <table width="100%" border="0" cellspacing="0" cellpadding="0" id='tablearticlenoticemodule'>
+                      <tr>
+                        <th width="27%" align="left" scope="row">内容</th>
+                        <th width="20%" align="left"  scope="row">链接</th>
+                        <th width="16%" align="left"  scope="row">打开方式</th>
+                        <th width="22%" align="left"  scope="row">所属栏目</th>
+                        <th width="15%"  scope="row">操作</th>
+                      </tr>
+                      --------------item    --------------------
+                      <tr id="articlenoticerow0">
+                        <td>
+                           <label for="textarticlenoticecontent0"></label>
+                           <input type="text" class="easyui-textbox" name="textarticlenoticecontent0"
+							id="textarticlenoticecontent0" style="width: 220px; height: 30px">
+                        </td>
+
+                        <td align="left"><label for="textarticlenotice0"></label>
+                           <input class="easyui-validatebox textbox" name="textarticlenotice0" id="textarticlenotice0" style="width: 180px; height: 30px" data-options="prompt:'Enter your URL.',validType:'url'">
+                        <td>
+                          <span class="dropdown-inlineblock form-w_1_5" >
+                          <select class="easyui-combobox" id="droparticlenoticeopentype0"
+					       style="width: 150px; height: 30px"
+					       data-options="required:true">
+                                <option value="0">当前页面打开</option>
+                                <option value="1">新窗口打开</option>
+                             </select>
+                            </span>
+                        </td>
+                        <td align="left">
+                           <span class="dropdown-inlineblock form-w_2" >
+                           <select class="easyui-combobox" name="droparticlenoticeweb0"
+					        style="width: 120px; height: 30px"
+					        data-options="required:true">
+                                <option value="April">首页</option>
+                                <option value="5">文章列表</option>
+                                <option value="5">网站公告</option>
+                             </select>
+                            </span>
+                        </td>
+                        <td align="center"><a id='linkarticlenoticedel0' class="btn red">删除</a></td>
+                      </tr>
+                      --------------item    --------------------
+                      <tr id="articlenoticerow1">
+                        <td>
+                           <label for="textarticlenoticecontent1"></label>
+                           <input type="text" class="easyui-textbox" name="textarticlenoticecontent1"
+							id="textarticlenoticecontent1" style="width: 220px; height: 30px">
+                        </td>
+
+                        <td align="left"><label for="textarticlenotice1"></label>
+                  	       <input class="easyui-validatebox textbox" name="textarticlenotice1" id="textarticlenotice1" style="width: 180px; height: 30px" data-options="prompt:'Enter your URL.',validType:'url'"></td>
+                        <td>
+                          <span class="dropdown-inlineblock form-w_1_5" >
+                          <select class="easyui-combobox" id="droparticlenoticeopentype1"
+					       style="width: 150px; height: 30px"
+					       data-options="required:true">
+                                <option value="April">当前页面打开</option>
+                                <option value="5">新窗口打开</option>
+                             </select>
+                            </span>
+                        </td>
+                        <td align="left">
+                           <span class="dropdown-inlineblock form-w_2" >
+                           <select class="easyui-combobox" name="droparticlenoticeweb1"
+					        style="width: 120px; height: 30px"
+					        data-options="required:true">
+                                <option value="April">首页</option>
+                                <option value="5">文章列表</option>
+                                <option value="5">网站公告</option>
+                             </select>
+                            </span>
+                        </td>
+                        <td align="center"><a id='linkarticlenoticedel1'  class="btn red">删除</a></td>
+                      </tr>
+                      --------------item    --------------------
+                      <tr id="articlenoticerow2">
+                        <td>
+                           <label for="textarticlenoticecontent2"></label>
+                           <input type="text" class="easyui-textbox" name="textarticlenoticecontent1"
+							id="textarticlenoticecontent2" style="width: 220px; height: 30px">
+                        </td>
+
+                        <td align="left"><label for="textarticlenotice2"></label>
+                  	       <input class="easyui-validatebox textbox" name="textarticlenotice2" id="textarticlenotice2" style="width: 180px; height: 30px" data-options="prompt:'Enter your URL.',validType:'url'"></td>
+                        <td>
+                          <span class="dropdown-inlineblock form-w_1_5" >
+                          <select class="easyui-combobox" id="droparticlenoticeopentype2"
+					       style="width: 150px; height: 30px"
+					       data-options="required:true">
+                                <option value="April">当前页面打开</option>
+                                <option value="5">新窗口打开</option>
+                             </select>
+                            </span>
+                        </td>
+                        <td align="left">
+                           <span class="dropdown-inlineblock form-w_2" >
+                           <select class="easyui-combobox" name="droparticlenoticeweb2"
+					        style="width: 120px; height: 30px"
+					        data-options="required:true">
+                                <option value="April">首页</option>
+                                <option value="5">文章列表</option>
+                                <option value="5">网站公告</option>
+                             </select>
+                            </span>
+                        </td>
+                        <td align="center"><a id='linkarticlenoticedel2' class="btn red">删除</a></td>
+                      </tr>
+                      --------------item    --------------------
+                      <tr id="articlenoticerow3">
+                        <td>
+                           <label for="textarticlenoticecontent3"></label>
+                           <input type="text" class="easyui-textbox" name="textarticlenoticecontent3"
+							id="textarticlenoticecontent3" style="width: 220px; height: 30px">
+                        </td>
+
+                        <td align="left"><label for="textarticlenotice3"></label>
+                  	       <input class="easyui-validatebox textbox" name="textarticlenotice3" id="textarticlenotice3" style="width: 180px; height: 30px" data-options="prompt:'Enter your URL.',validType:'url'"></td>
+                        <td>
+                          <span class="dropdown-inlineblock form-w_1_5" >
+                          <select class="easyui-combobox" id="droparticlenoticeopentype3"
+					       style="width: 150px; height: 30px"
+					       data-options="required:true">
+                                <option value="0">当前页面打开</option>
+                                <option value="1">新窗口打开</option>
+                             </select>
+                            </span>
+                        </td>
+                        <td align="left">
+                           <span class="dropdown-inlineblock form-w_2" >
+                           <select class="easyui-combobox" name="droparticlenoticeweb3"
+					        style="width: 120px; height: 30px"
+					        data-options="required:true">
+                                <option value="April">首页</option>
+                                <option value="5">文章列表</option>
+                                <option value="5">网站公告</option>
+                             </select>
+                            </span>
+                        </td>
+                        <td align="center"><a id='linkarticlenoticedel3' class="btn red">删除</a></td>
+                      </tr>
+                      --------------item    --------------------
+                      <tr id="articlenoticerow4">
+                        <td>
+                           <label for="textarticlenoticecontent4"></label>
+                           <input type="text" class="easyui-textbox" name="textarticlenoticecontent4"
+							id="textarticlenoticecontent4" style="width: 220px; height: 30px">
+                        </td>
+
+                        <td align="left"><label for="textarticlenotice4"></label>
+                  	       <input class="easyui-validatebox textbox" name="textarticlenotice4" id="textarticlenotice4" style="width: 180px; height: 30px" data-options="prompt:'Enter your URL.',validType:'url'"></td>
+                        <td>
+                          <span class="dropdown-inlineblock form-w_1_5" >
+                          <select class="easyui-combobox" id="droparticlenoticeopentype4"
+					       style="width: 150px; height: 30px"
+					       data-options="required:true">
+                                <option value="0">当前页面打开</option>
+                                <option value="1">新窗口打开</option>
+                             </select>
+                            </span>
+                        </td>
+                        <td align="left">
+                           <span class="dropdown-inlineblock form-w_2" >
+                           <select class="easyui-combobox" name="droparticlenoticeweb4"
+					        style="width: 120px; height: 30px"
+					        data-options="required:true">
+                                <option value="April">首页</option>
+                                <option value="5">文章列表</option>
+                                <option value="5">网站公告</option>
+                             </select>
+                            </span>
+                        </td>
+                        <td align="center"><a id='linkarticlenoticedel4' class="btn red">删除</a></td>
+                      </tr>
+                 </table> -->
+                 </div>
+						</div>
+					</div>
+					<div class="form-botton">
+						<input type="button" name="btnarticlenoticesubmit"
+							id="btnarticlenoticesubmit" value="确定提交" class="btn btn_a">
+						<input type="reset" name="button" id="button" value="重置"
+							class="btn btn_b">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+

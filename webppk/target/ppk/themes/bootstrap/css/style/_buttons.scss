@@ -1,0 +1,14 @@
+
+
+.btn-theme {
+  @include button-variant($btn-theme-color, $btn-theme-bg, $btn-theme-border);
+}
+
+.btn-match {
+  @include button-variant($btn-match-color, $btn-match-bg, $btn-match-border);
+}
+
+.btn-dark {
+  @include button-variant($btn-dark-color, $btn-dark-bg, $btn-dark-border);
+}
+

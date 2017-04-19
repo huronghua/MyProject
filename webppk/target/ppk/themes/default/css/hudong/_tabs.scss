@@ -1,0 +1,31 @@
+.tabs{
+  border-bottom:1px solid #333;
+  font-size: 14px;
+  @include clearfix();
+  > li{
+    > a {
+      float: left;
+      padding: $nav-link-padding;
+      margin-right: 2px;
+      line-height: $line-height-base;
+      // border-radius: $border-radius-base $border-radius-base 0 0;
+      &:hover,
+      &.active{
+        color:$brand-primary;
+        font-weight:bold;
+      }
+      >i {
+          font-size: 18px;
+          position: relative;
+          top:1px;
+          margin-right: 5px;
+      }
+    }
+  }
+}
+
+.tab-tools{
+  padding:10px;
+  background:$gray-lighter;
+  color:$gray;
+}

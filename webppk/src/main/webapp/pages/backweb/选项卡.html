@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>角色管理</title>
+ <!-- Bootstrap -->
+<link rel="stylesheet" href="css/global.css">
+<link href="css/layout.css" rel="stylesheet">
+<link href="css/fonticon.css" rel="stylesheet">
+<script src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	var $tab_li = $('#tab ul li');
+	$tab_li.click(function(){
+		$(this).addClass('selected').siblings().removeClass('selected');
+		var index = $tab_li.index(this);
+		$('div.tab_box > div').eq(index).show().siblings().hide();
+	});	
+});
+</script>
+</head>
+<body class="navbady">
+
+<div id="tab">
+	<ul class="tab_menu" cl>
+    	<li class="selected">时事</li>
+        <li>体育</li>
+        <li>新闻</li>
+    </ul>
+    <div class="tab_box">
+    	<div>1111111</div>
+        <div class="hide">222222222222</div>
+        <div class="hide">33333333333333333</div>
+    </div>
+</div>
+
+</body>
+</html>

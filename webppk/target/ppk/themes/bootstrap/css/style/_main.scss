@@ -1,0 +1,54 @@
+
+@media (max-width: 992px){
+header,footer,#main{min-width:960px;}
+}
+
+header{padding-top:20px;border-bottom:4px solid #ddd;}
+header #menu{text-align:right;}
+header #menu li{padding:0 10px;display:inline-block;}
+header #menu li a{color:#333;line-height:40px;display:block;border-bottom:3px solid #fff;font-size:$font-size-large;}
+header #menu li a:hover{border-color:$brand-theme;color:$brand-theme;position:relative;top:-8px;text-decoration:none;@include transition(all .2s ease-in-out);}
+header #menu li.active a{color:$brand-theme;}
+
+
+
+header #lang .dropdown-menu{margin-top:-4px;padding:0;min-width:57px;width:57px;border-top-left-radius:0;border-top-right-radius:0;background:$btn-dark-bg;border:none;overflow:hidden;}
+header #lang .dropdown-menu a{color:$gray-lighter;text-indent:-5px;}
+header #lang .dropdown-menu a:hover{background:$gray;}
+
+header .topmenu{padding-bottom:20px;}
+header .topmenu > *{float:right;}
+header #user-menu .btn{border:none;}
+header #user-menu .btn:hover,
+header #user-menu .btn:active,
+header #user-menu .btn:focus,
+header #user-menu.open > .btn-default.dropdown-toggle:hover,
+header #user-menu.open > .btn-default.dropdown-toggle:active,
+header #user-menu.open > .btn-default.dropdown-toggle:focus{background:none;}
+header #user-menu .fn-user-avatar{display:inline-block;}
+header #user-menu .btn{padding:0;padding-right:10px;}
+header #user-menu .btn span:not(:last-child){float:left;}
+header #user-menu .btn span:nth-child(2){line-height:34px;margin:0 5px;}
+header #user-menu .btn span:last-child{position:relative;top:5px;}
+
+header .head-op a{position:relative;margin-left:10px;display:inline-block;width:34px;height:34px;background:#333;text-align:center;line-height:34px;color:#fff;
+-ms-border-radius:$border-radius-all;-o-border-radius:$border-radius-all;-moz-border-radius:$border-radius-all;-webkit-border-radius:$border-radius-all;border-radius:$border-radius-all;}
+header .head-op a.new{background:$brand-match;}
+header .head-op a em{position:absolute;top:2px;right:2px;width:8px;height:8px;overflow:hidden;background:$brand-theme;
+-ms-border-radius:$border-radius-all;-o-border-radius:$border-radius-all;-moz-border-radius:$border-radius-all;-webkit-border-radius:$border-radius-all;border-radius:$border-radius-all;}
+
+
+
+
+footer{background:#3e4152;}
+footer .count{padding:40px 0;}
+footer .count .item{text-align:center;color:#fff;font-size:120%;}
+footer .count .item strong{margin-left:10px;color:#ffe080;font-family:georgia;}
+footer .count i{margin-right:10px;font-size:150%;position:relative;top:3px;}
+footer .right{background:#ccc;padding:15px 0;}
+footer .right p{text-align:center;font-size:12px;}
+
+
+#main{padding-top:20px;padding-bottom:20px;}
+
+

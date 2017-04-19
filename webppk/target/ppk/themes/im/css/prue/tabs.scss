@@ -1,0 +1,29 @@
+.nav-tabs{
+  font-size: 14px;
+  margin:0em;
+  padding:0;
+}
+.nav-tabs li{
+  list-style-type: none;
+  float:left;
+
+  > a {
+    border-radius: 2px;
+    text-decoration: none;
+    float: left;
+    color:#666;
+    padding:10px;
+    margin-right: 2px;
+    background:#ccc;
+    // border-radius: $border-radius-base $border-radius-base 0 0;
+    &:hover,
+    &.active{
+      background:#0C9D91;
+      color:#fff;
+    }
+    >i {
+        font-size: 18px;
+        margin-right: 8px;
+    }
+  }
+}

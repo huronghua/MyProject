@@ -1,0 +1,103 @@
+@charset "utf-8";
+.btn{ margin:0; padding:0 12px; border:1px solid #0C9C92; background:#0C9C92; height:30px; line-height:22px; color:#fff; font-size:14px; cursor:pointer; text-align:center; vertical-align:middle; text-decoration:none; display:inline-block; text-decoration:none; }
+input.btn { padding:0 14px; height:30px; color:#fff; }
+a.btn { padding:0 14px; height:28px; line-height:28px; }
+.btn:hover { background:#018379; text-decoration:none; }
+.btn[disabled="disabled"],
+.btn.disabled,
+.btn[disabled="disabled"]:hover,
+.btn.disabled:hover {color:#fff; background:#0C9C92; opacity:0.4; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); -moz-opacity:0.4; cursor:default; }
+
+.btn.uploadify-button{width:120px !important;height:30px !important;padding:0 !important;}
+
+.btn-dis{ opacity:0.4; filter: progid:DXImageTransform.Microsoft.Alpha(opacity=40); -moz-opacity:0.4; cursor:default; }
+.btn-cancel { background:#999; border-color:#999; }
+.btn-cancel:hover { background:#666;border-color:#666; }
+.btn-cancel[disabled="disabled"],
+.btn-cancel.disabled,
+.btn-cancel[disabled="disabled"]:hover,
+.btn-cancel.disabled:hover { background:#c2c2c2;border-color:#c2c2c2; }
+
+.btn-other,input.btn-other { background:#f5f5f5; border-color:#ddd; color:#333; }
+.btn-other:hover { background:#ddd; }
+.btn-other[disabled="disabled"],
+.btn-other.disabled { background:#333; }
+
+.btn-co-a,input.btn-co-a{background:#f5a743;border-color:#f5a743;color:#fff;}
+.btn-co-a:hover{background:#e4932a;border-color:#e4932a;}
+.btn-co-a[disabled="disabled"],
+.btn-co-a.disabled,
+.btn-co-a[disabled="disabled"]:hover,
+.btn-co-a.disabled:hover{background:#f8ca8e;border-color:#f8ca8e; }
+
+
+.btn-co-b,input.btn-co-b{background:#dd4254;border-color:#dd4254;color:#fff;}
+.btn-co-b:hover{background:#c82d3f;border-color:#c82d3f;}
+.btn-co-b[disabled="disabled"],
+.btn-co-b.disabled,
+.btn-co-b[disabled="disabled"]:hover,
+.btn-co-b.disabled:hover {background:#eb8e98;border-color:#eb8e98;}
+
+.btn-co-c,input.btn-co-c{background:#0b9d54;border-color:#0b9d54;color:#fff;}
+.btn-co-c:hover{background:#078847;border-color:#078847;}
+.btn-co-c[disabled="disabled"],
+.btn-co-c.disabled,
+.btn-co-c[disabled="disabled"]:hover,
+.btn-co-c.disabled:hover{background:#6dc499;border-color:#6dc499;}
+
+.ie7 .btn {padding:0; line-height:26px;}
+.ie7 input.btn { line-height:26px; }
+.ie7 a.btn { padding:0 14px; height:28px; line-height:30px; }
+
+.btn-small { padding:0 8px 2px; height:26px; line-height:23px; font-size:12px; }
+input.btn-small { padding:0 10px 1px; height:26px; }
+a.btn-small { padding:0 10px 1px; height:23px; line-height:22px; }
+.ie7 .btn-small { }
+.ie7 input.btn-small { line-height:22px; }
+.ie7 a.btn-small { height:24px; line-height:27px; }
+.ie7 .btn.disabled,
+.ie7 .btn[disabled],
+.ie7 .btn.disabled:hover,
+.ie7 .btn[disabled]:hover { background:#e4a0a8; border-color:#da9da4; }
+.ie7 .btn.btn-cancel.disabled,
+.ie7 .btn.btn-cancel[disabled],
+.ie7 .btn.btn-cancel.disabled:hover,
+.ie7 .btn.btn-cancel[disabled]:hover { background:#adadad; border-color:#999; }
+
+
+.btn-group { position:relative; display:inline-block; }
+.btn-group .dropdown-toggle .down { margin:0 0 3px 5px; width:9px; height:5px; background:url(/themes/default/img/other-bg.png) -40px -30px no-repeat; display:inline-block; overflow:hidden; }
+.btn-group .ui-dropdown-menu{ display:none; }
+#menu ul li .sub-menu{visibility: hidden;}
+.btn-group:hover .ui-dropdown-menu, #menu ul li:hover .sub-menu {  z-index:200; }
+#menu ul li:hover .sub-menu { z-index:400; }
+
+
+.ie7 .btn-group { display:inline; }
+.ie7 .btn-group .dropdown-toggle { position:relative; padding:0 12px 0 2px; }
+.ie7 .btn-group .dropdown-toggle .down { position:absolute; right:12px; top:12px; }
+.ie7 .btn-group .ui-dropdown-menu li a { padding-top:3px; }
+.ie7 .ui-dropdown-menu .divider { margin:0; }
+
+
+/* 白色按钮 */
+.btn-white,input.btn-white{ background: #fff; color:#999; border:1px solid #F0F0F0; }
+a.btn-white:hover,
+.btn-white:hover{ background: #CC0033; color:#FFF; }
+
+/* 淡绿色按钮 */
+.btn-thingreen{ background: #F1FDEF; color:#87BC90; border:1px solid #D7E9DB; }
+
+a.btn-thingreen:hover,
+.btn-thingreen:hover{ background: #69B575; color:#FFF; }
+
+/* 淡红色按钮 */
+.btn-thinred{ background: #FEF2F2; color:#D26E7A; border:1px solid #E7C8CD; }
+
+a.btn-thinred:hover,
+.btn-thinred:hover{ background: #BB1225; color:#FFF; }
+
+/* 绿色按钮 */
+.btn-green{ background:#10BF93; color:#FFF; border:1px solid #029D76; }
+a.btn-green:hover,
+.btn-green:hover{ background: #BB1225; color:#FFF; }

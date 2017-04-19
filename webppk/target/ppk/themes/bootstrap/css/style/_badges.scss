@@ -1,0 +1,16 @@
+//
+// Badges
+// --------------------------------------------------
+
+.badge {
+  background-color: $badge-bg;
+
+  // [converter] extracted a& to a.badge
+
+  // Account for badges in navs
+  .list-group-item.active > &,
+  .nav-pills > .active > a > & {
+    color: $badge-active-color;
+  }
+
+}

@@ -1,0 +1,31 @@
+@charset "utf-8";
+.ui-tit-h2 {position:relative;margin-bottom:20px;height:30px;}
+.ui-tit-h2 hr {position:absolute;left:0;top:50%;width:100%;height:1px;border:none;border-top:1px solid #ddd;z-index:20;}
+.ui-tit-h2 a,
+.ui-tit-h2 span {position:relative;z-index:30;float:left;}
+.ui-tit-h2 span {padding:0 10px;background:#fff;font:18px/30px "\5FAE\8F6F\96C5\9ED1";}
+.ui-tit-h2 span i {margin:0 0 3px 5px;width:4px;height:7px;background:url(../img/other-bg.png) 0 -20px;display:inline-block;}
+.ui-tit-h2 .back {width:30px;height:30px;background:url(../img/other-bg.png) -37px 5px no-repeat #888;display:inline-block;}
+.ui-tit-h2 .back:hover {background-color:#333;}
+
+.ie7 .ui-tit-h2 span i {margin-bottom:8px;}
+.ui-tit-h3 {margin-bottom:10px;padding:0 10px;background:#eee;font-size:14px;color:#333;line-height:30px;position:relative;}
+.ui-tit-h3 span {margin-right:30px;display:inline-block;}
+.ui-tit-h3 a {width:50px;height:30px;background: url(../img/other-bg.png) 18px -40px no-repeat #CCC;display:block;overflow:hidden;position:absolute;right:0;top: 0;}
+.ui-tit-h3 a:hover {background-color:#bbb;}
+.ui-tit-h3 .up {background-color:#0C9C92;background-position:18px -60px;}
+.ui-tit-h3 .up:hover {background-color:#db2539;}
+.ui-tit-h3-line {position:relative;margin-bottom:20px;height:30px;color:#000;}
+.ui-tit-h3-line .line {position:absolute;bottom:-2px;left:0;width:100%;height:1px;background:none;border:1px solid #efefef;border-right:0 none;border-left:0 none;overflow:hidden;}
+.ui-tit-h3-line .tit-con {position:absolute;left:0;top:0;padding:0 5px;border-bottom:3px solid #333;font-size:14px;line-height:29px;white-space:nowrap;}
+
+.ui-tit-h3-line .ui-seq{margin-bottom:-1px;font-weight:normal;}
+
+.ui-tit-h3-line .tooltip{top:0;left:100%;margin-left:10px;}
+.ui-tit-h3-line .tooltip .tooltip-inner{font-weight:normal;}
+.ui-tit-h3-line .tooltip .tooltip-inner a{margin-left:5px;}
+
+.ui-tit-h3-line .more{font-weight:normal;color:#999;}
+.ui-tit-h3-line .more strong{margin:0 3px;}
+.ui-tit-h3-line .more a{margin-left:10px;}
+

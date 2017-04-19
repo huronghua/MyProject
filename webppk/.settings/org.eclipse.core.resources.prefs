@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/sk/ppk/controller/loginbackController.java=UTF-8
+encoding//src/main/java/com/sk/ppk/controller/loginforeController.java=UTF-8
+encoding//src/main/java/com/sk/ppk/controller/styleController.java=UTF-8
+encoding//src/main/java/com/sk/ppk/controller/stylelistController.java=UTF-8
+encoding//src/main/resources/dbConfig.properties=UTF-8
+encoding//src/main/resources/druidConfig.properties=UTF-8
+encoding//src/main/resources/log4j.properties=UTF-8
+encoding//src/main/webapp/pages/backweb/dynamic_details.jsp=UTF-8
+encoding//src/main/webapp/pages/backweb/dynamic_list.jsp=UTF-8
+encoding//src/main/webapp/pages/backweb/newpage.jsp=UTF-8
+encoding/<project>=UTF-8

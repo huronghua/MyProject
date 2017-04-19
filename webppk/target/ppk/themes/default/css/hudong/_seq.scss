@@ -1,0 +1,31 @@
+@charset "utf-8";
+.ui-seq .seq-item{
+  text-decoration:none;
+  background: $white;
+  margin-right:-1px;
+  padding:0 10px;
+  border:1px solid #ddd;
+  line-height:28px;
+  color:#999;
+  cursor:pointer;
+  float:left;
+  position:relative;
+  z-index:10;
+  padding: 6px 8px 6px 12px;
+  line-height: $line-height-base;
+}
+.ui-seq .seq-item:hover{
+  color:#bc1225;
+}
+.ui-seq .seq-item.active{
+  text-decoration:none;
+  position:relative;
+  z-index:20;
+  background:#fff6f7;
+  border-color:#ebced2;
+  color:#bc1225;
+}
+.ui-seq .seq-item.active .icon-arrow-down,
+.ui-seq .seq-item.active .icon-arrow-up{
+  color:#bc1225;
+}

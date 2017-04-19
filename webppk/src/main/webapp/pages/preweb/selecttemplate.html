@@ -1,0 +1,884 @@
+
+<!------------------------  模板 模块  -------------------------->
+<div class="popup popupbg distable" id='selecttemplatepop'
+	style="display: none">
+	<div class="distablediv">
+		<div class="popupcontainer">
+			<div class="poputitlee clearboth">
+				<div class="pull-left poputitlee_name">精选模板</div>
+				<div class="pull-right ">
+					<div class="close  icon-iconfont-guanbi"></div>
+				</div>
+			</div>
+			<div class="popupcontent">
+				<!------------------------------------->
+				<div class="popup-modularsettings  clearboth">
+					<div class="template_being pull-left">
+						<div class="template_being_img text-center pull-left">
+							<img id='template_img0'
+								src="static/preweb/images/template_img1.jpg">
+						</div>
+						<div class="template_being_info pull-left">
+							<P>您正在使用的精品模板：</P>
+							<p>
+								<b class=" red">拖拽版</b>
+							</p>
+							<span id='templatename'>TJ_0255</span>
+							<div class="btn g">使用中</div>
+						</div>
+					</div>
+					<div class="template_search pull-right">
+						<form action="" method="get">
+							<label for="textfield">模板编号:</label>
+							<div class="clearboth">
+								<input type="text" name="texttemplatesearch"
+									id="texttemplatesearch"
+									class="form-control  template_search_a pull-left"> <input
+									type="button" id="btntemplatesearch" name="btntemplatesearch"
+									class="btn btn-primary template_search_b pull-left" value="搜索" />
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-----------------  模板筛选    -------------------->
+				<div class="template_screen clearboth">
+					<ul class="template_tab set_coltab pull-left">
+						<li id='usetypeshop' class="pull-left artive">商城</li>
+						<li id='usetypedoor' class="pull-left">门户</li>
+						<li id='usetypeenterprise' class="pull-left">企业</li>
+						<li id='usetypepersonal' class="pull-left">个人</li>
+						<li id='usetypebbs' class="pull-left">论坛</li>
+						<li id='usetypeinformation' class="pull-left">资讯</li>
+					</ul>
+					<div class="template_tbs radiochoice_box">
+						<div class="pull-left radiochoice_item" id="rbtradiotypepc">
+							<span class="radiochoice_co"> <input type="radio"
+								name="templatetab1" id="templatetab1"
+								class="form_choice choiceclass" />
+							</span> <label for="templatetab1">PC</label>
+						</div>
+						<div class="pull-left radiochoice_item" id="rbtradiotypemobile">
+							<span class="radiochoice_co"> <input type="radio"
+								name="templatetab2" id="templatetab2"
+								class="form_choice choiceclass" />
+							</span> <label for="templatetab2">移动端</label>
+						</div>
+						<div class="pull-left radiochoice_item" id="rbtradiotypeall">
+							<span class="radiochoice_co"> <input type="radio"
+								name="templatetab3" id="templatetab3"
+								class="form_choice choiceclass" />
+							</span> <label for="templatetab3">PC+移动端</label>
+						</div>
+					</div>
+				</div>
+				<!-----------------  颜色    -------------------->
+				<div class="template_colorgroup  clearboth">
+					<div class="template_colotiel pull-left">模板颜色：</div>
+					<div class="template_colorlitem pull-left">
+						<ul>
+							<li class="template_colorclick artive"></li>
+							<li class=" bg_red"></li>
+							<li class="bg_blue "></li>
+							<li class="bg_black "></li>
+							<li class="bg_orange"></li>
+							<li class="bg_violet"></li>
+							<li class="bg_gray"></li>
+							<li class="bg_darkred"></li>
+							<li class="bg_green"></li>
+						</ul>
+					</div>
+				</div>
+				<!------------------- 模板列表  ------------------>
+				<div class="template_listcon">
+					<!-----------------  group    -------------------->
+					<div class="template_listgroup set_coltab_cont">
+						<div class="template_listgroup_contar"
+							id='template_listgroup_contar'>
+							<ul class="clearboth">
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center artive"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img1-1'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname1-1'>TJ_0355</p> <input type='hidden'
+									id='template_hid1-1'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img2-1'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname2-1'>TJ_0355</p> <input type='hidden'
+									id='template_hid2-1'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img3-1'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname3-1'>TJ_0355</p> <input type='hidden'
+									id='template_hid3-1'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img4-1'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname4-1'>TJ_0355</p> <input type='hidden'
+									id='template_hid4-1'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img5-1'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname5-1'>TJ_0355</p> <input type='hidden'
+									id='template_hid5-1'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img6-1'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname6-1'>TJ_0355</p> <input type='hidden'
+									id='template_hid6-1'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img7-1'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname7-1'>TJ_0355</p> <input type='hidden'
+									id='template_hid7-1'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img8-1'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname8-1'>TJ_0355</p> <input type='hidden'
+									id='template_hid8-1'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img9-1'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname9-1'>TJ_0355</p> <input type='hidden'
+									id='template_hid9-1'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img10-1'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname10-1'>TJ_0355</p> <input type='hidden'
+									id='template_hid10-1'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img11-1'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname11-1'>TJ_0355</p> <input type='hidden'
+									id='template_hid11-1'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img12-1'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname12-1'>TJ_0355</p> <input type='hidden'
+									id='template_hid12-1'></li>
+							</ul>
+						</div>
+						<div class="listpaging ">
+							<ul>
+								<li class="previous">上一页</li>
+								<li class="artive">1</li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li><a href="">6</a></li>
+								<li><a href="">7</a></li>
+								<li><a href="">8</a></li>
+								<li><a href="">9</a></li>
+								<li class="next"><a href="">下一页</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-----------------  group    -------------------->
+					<div class="template_listgroup set_coltab_cont"
+						id='template_listgroup_contar1'>
+						<div class="template_listgroup_contar">
+							<ul class="clearboth">
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center artive"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img1-2'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname1-2'>TJ_0355</p> <input type='hidden'
+									id='template_hid1-2'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img2-2'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname2-2'>TJ_0355</p> <input type='hidden'
+									id='template_hid2-2'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img3-2'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname3-2'>TJ_0355</p> <input type='hidden'
+									id='template_hid3-2'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img4-2'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname4-2'>TJ_0355</p> <input type='hidden'
+									id='template_hid4-2'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img5-2'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname5-2'>TJ_0355</p> <input type='hidden'
+									id='template_hid5-2'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img6-2'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname6-2'>TJ_0355</p> <input type='hidden'
+									id='template_hid6-2'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img7-2'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname7-2'>TJ_0355</p> <input type='hidden'
+									id='template_hid7-2'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img8-2'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname8-2'>TJ_0355</p> <input type='hidden'
+									id='template_hid8-2'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img9-2'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname9-2'>TJ_0355</p> <input type='hidden'
+									id='template_hid9-2'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img10-2'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname10-2'>TJ_0355</p> <input type='hidden'
+									id='template_hid10-2'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img11-2'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname11-2'>TJ_0355</p> <input type='hidden'
+									id='template_hid11-2'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img12-2'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname12-2'>TJ_0355</p> <input type='hidden'
+									id='template_hid12-2'></li>
+							</ul>
+						</div>
+						<div class="listpaging ">
+							<ul>
+								<li class="previous">上一页</li>
+								<li class="artive">1</li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li><a href="">6</a></li>
+								<li><a href="">7</a></li>
+								<li><a href="">8</a></li>
+								<li><a href="">9</a></li>
+								<li class="next"><a href="">下一页</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-----------------  group    -------------------->
+					<div class="template_listgroup set_coltab_cont"
+						id='template_listgroup_contar2'>
+						<div class="template_listgroup_contar">
+							<ul class="clearboth">
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center artive"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img1-3'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname1-3'>TJ_0355</p> <input type='hidden'
+									id='template_hid1-3'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img2-3'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname2-3'>TJ_0355</p> <input type='hidden'
+									id='template_hid2-3'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img3-3'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname3-3'>TJ_0355</p> <input type='hidden'
+									id='template_hid3-3'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img4-3'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname4-3'>TJ_0355</p> <input type='hidden'
+									id='template_hid4-3'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img5-3'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname5-3'>TJ_0355</p> <input type='hidden'
+									id='template_hid5-3'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img6-3'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname6-3'>TJ_0355</p> <input type='hidden'
+									id='template_hid6-3'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img7-3'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname7-3'>TJ_0355</p> <input type='hidden'
+									id='template_hid7-3'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img8-3'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname8-3'>TJ_0355</p> <input type='hidden'
+									id='template_hid8-3'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img9-3'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname9-3'>TJ_0355</p> <input type='hidden'
+									id='template_hid9-3'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img10-3'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname10-3'>TJ_0355</p> <input type='hidden'
+									id='template_hid10-3'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img11-3'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname11-3'>TJ_0355</p> <input type='hidden'
+									id='template_hid11-3'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img12-3'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname12-3'>TJ_0355</p> <input type='hidden'
+									id='template_hid12-3'></li>
+							</ul>
+						</div>
+						<div class="listpaging ">
+							<ul>
+								<li class="previous">上一页</li>
+								<li class="artive">1</li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li><a href="">6</a></li>
+								<li><a href="">7</a></li>
+								<li><a href="">8</a></li>
+								<li><a href="">9</a></li>
+								<li class="next"><a href="">下一页</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-----------------  group    -------------------->
+					<div class="template_listgroup set_coltab_cont"
+						id='template_listgroup_contar3'>
+						<div class="template_listgroup_contar">
+							<ul class="clearboth">
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center artive"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img1-4'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname1-4'>TJ_0355</p> <input type='hidden'
+									id='template_hid1-4'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img2-4'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname2-4'>TJ_0355</p> <input type='hidden'
+									id='template_hid2-4'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img3-4'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname3-4'>TJ_0355</p> <input type='hidden'
+									id='template_hid3-4'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img4-4'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname4-4'>TJ_0355</p> <input type='hidden'
+									id='template_hid4-4'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img5-4'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname5-4'>TJ_0355</p> <input type='hidden'
+									id='template_hid5-4'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img6-4'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname6-4'>TJ_0355</p> <input type='hidden'
+									id='template_hid6-4'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img7-4'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname7-4'>TJ_0355</p> <input type='hidden'
+									id='template_hid7-4'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img8-4'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname8-4'>TJ_0355</p> <input type='hidden'
+									id='template_hid8-4'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img9-4'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname9-4'>TJ_0355</p> <input type='hidden'
+									id='template_hid9-4'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img10-4'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname10-4'>TJ_0355</p> <input type='hidden'
+									id='template_hid10-4'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img11-4'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname11-4'>TJ_0355</p> <input type='hidden'
+									id='template_hid11-4'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img12-4'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname12-4'>TJ_0355</p> <input type='hidden'
+									id='template_hid12-4'></li>
+							</ul>
+						</div>
+						<div class="listpaging ">
+							<ul>
+								<li class="previous">上一页</li>
+								<li class="artive">1</li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li><a href="">6</a></li>
+								<li><a href="">7</a></li>
+								<li><a href="">8</a></li>
+								<li><a href="">9</a></li>
+								<li class="next"><a href="">下一页</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-----------------  group    -------------------->
+					<div class="template_listgroup set_coltab_cont"
+						id='template_listgroup_contar4'>
+						<div class="template_listgroup_contar">
+							<ul class="clearboth">
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center artive"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img1-5'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname1-5'>TJ_0355</p> <input type='hidden'
+									id='template_hid1-5'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img2-5'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname2-5'>TJ_0355</p> <input type='hidden'
+									id='template_hid2-5'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img3-5'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname3-5'>TJ_0355</p> <input type='hidden'
+									id='template_hid3-5'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img4-5'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname4-5'>TJ_0355</p> <input type='hidden'
+									id='template_hid4-5'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img5-5'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname5-5'>TJ_0355</p> <input type='hidden'
+									id='template_hid5-5'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img6-5'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname6-5'>TJ_0355</p> <input type='hidden'
+									id='template_hid6-5'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img7-5'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname7-5'>TJ_0355</p> <input type='hidden'
+									id='template_hid7-5'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img8-5'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname8-5'>TJ_0355</p> <input type='hidden'
+									id='template_hid8-5'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img9-5'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname9-5'>TJ_0355</p> <input type='hidden'
+									id='template_hid9-5'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img10-5'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname10-5'>TJ_0355</p> <input type='hidden'
+									id='template_hid10-5'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img11-5'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname11-5'>TJ_0355</p> <input type='hidden'
+									id='template_hid11-5'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img12-5'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname12-5'>TJ_0355</p> <input type='hidden'
+									id='template_hid12-5'></li>
+							</ul>
+						</div>
+						<div class="listpaging ">
+							<ul>
+								<li class="previous">上一页</li>
+								<li class="artive">1</li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li><a href="">6</a></li>
+								<li><a href="">7</a></li>
+								<li><a href="">8</a></li>
+								<li><a href="">9</a></li>
+								<li class="next"><a href="">下一页</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-----------------  group    -------------------->
+					<div class="template_listgroup set_coltab_cont"
+						id='template_listgroup_contar5'>
+						<div class="template_listgroup_contar">
+							<ul class="clearboth">
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center artive"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img1-6'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname1-6'>TJ_0355</p> <input type='hidden'
+									id='template_hid1-6'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img2-6'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname2-6'>TJ_0355</p> <input type='hidden'
+									id='template_hid2-6'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img3-6'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname3-6'>TJ_0355</p> <input type='hidden'
+									id='template_hid3-6'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img4-6'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname4-6'>TJ_0355</p> <input type='hidden'
+									id='template_hid4-6'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img5-6'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname5-6'>TJ_0355</p> <input type='hidden'
+									id='template_hid5-6'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img6-6'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname6-6'>TJ_0355</p> <input type='hidden'
+									id='template_hid6-6'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img7-6'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname7-6'>TJ_0355</p> <input type='hidden'
+									id='template_hid7-6'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img8-6'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname8-6'>TJ_0355</p> <input type='hidden'
+									id='template_hid8-6'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img9-6'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname9-6'>TJ_0355</p> <input type='hidden'
+									id='template_hid9-6'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img10-6'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname10-6'>TJ_0355</p> <input type='hidden'
+									id='template_hid10-6'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img11-6'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname11-6'>TJ_0355</p> <input type='hidden'
+									id='template_hid11-6'></li>
+								<!------------------- item  ------------------>
+								<li class="pull-left text-center"><i
+									class="screen icon-uniE92C"></i>
+									<div>
+										<img id='template_img12-6'
+											src="static/preweb/images/template_img1.jpg">
+									</div>
+									<p id='pname12-6'>TJ_0355</p> <input type='hidden'
+									id='template_hid12-6'></li>
+							</ul>
+						</div>
+						<div class="listpaging ">
+							<ul>
+								<li class="previous">上一页</li>
+								<li class="artive">1</li>
+								<li><a href="">2</a></li>
+								<li><a href="">3</a></li>
+								<li><a href="">4</a></li>
+								<li><a href="">5</a></li>
+								<li><a href="">6</a></li>
+								<li><a href="">7</a></li>
+								<li><a href="">8</a></li>
+								<li><a href="">9</a></li>
+								<li class="next"><a href="">下一页</a></li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

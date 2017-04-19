@@ -1,0 +1,35 @@
+@charset "utf-8";
+.icon{display:inline-block;width:16px;height:16px;background-image:url(/themes/default/img/icon-16.png);background-repeat:no-repeat;border:0 none;cursor:pointer;overflow: hidden;text-indent:-999px;_text-indent:0;vertical-align:middle;}
+.ie6 .icon,.ie7 .icon {text-indent:0;}
+.icon:hover{background-image:url(/themes/default/img/icon-16-hover.png);}
+.icon[disabled],
+.idis,
+.idis:hover {background-image:url(/themes/default/img/icon-16-dis.png);cursor:default;}
+.btn .icon {margin-right:5px;background-image:url(/themes/default/img/icon-16-white.png);cursor:default;}
+.iunfold {background-position:0 0;}/* 展开 */
+.icoll {background-position:-16px 0;}/* 收起 */
+.imore {background-position:-32px 0;}/* 更多 */
+.iso {background-position:-48px 0;}/* 查看 搜索 */
+.iedit{background-position:-64px 0;}/* 编辑 修改 */
+.idel{background-position:-80px 0;}/* 删除 关闭 */
+.iedit-pen{background-position:-96px 0;}/* 编辑 笔形 */
+
+
+
+.ui-file-type{display:block;width:16px;height:16px;overflow:hidden;background:url(/themes/default/img/file-type-16.png) no-repeat;}
+.ui-file-type.doc,
+.ui-file-type.docx{background-position:0 0;}
+.ui-file-type.ppt,
+.ui-file-type.pptx{background-position:-16px 0;}
+.ui-file-type.xls,
+.ui-file-type.xlsx{background-position:-32px 0;}
+.ui-file-type.vsd{background-position:-48px 0;}
+.ui-file-type.pot{background-position:0 -16px;}
+.ui-file-type.pps{background-position:-16px -16px;}
+.ui-file-type.rtf{background-position:-32px -16px;}
+.ui-file-type.wps{background-position:-48px -16px;}
+.ui-file-type.et{background-position:0 -32px;}
+.ui-file-type.dps{background-position:-16px -32px;}
+.ui-file-type.pdf,
+.ui-file-type.pdfx{background-position:-32px -32px;}
+.ui-file-type.txt{background-position:-48px -32px;}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<title>图片模块-背景模块</title>
+ <!-- Bootstr ap -->
+
+<link href="css/fontsico.css" rel="stylesheet">
+<link rel="stylesheet" href="css/jquery.cxcolor.css">
+<link rel="stylesheet" href="css/global.css">
+<link href="css/layout.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/style.js"></script>
+<script src="js/jquery-1.4.4.min.js"></script>
+<script src="js/jquery.cxcolor.min.js"></script>
+
+</head>
+<body>
+
+
+<!------------------------  背景模块 模块  -------------------------->
+<div class="popup popupbg distable" >
+   <div class="distablediv">
+   <div class="popupcontainer">
+       <div class="poputitlee clearboth">
+         <div class="pull-left poputitlee_name">背景模块</div>
+          <div class="pull-right ">
+             <div class="close  icon-iconfont-guanbi"></div>
+          </div>
+       </div>
+       <div class="popupcontent">
+         <form action="" method="get" enctype="multipart/form-data">
+          <!------------------------------------->
+          <div class="popup-modularsettings  clearboth">
+          
+             <!---------------form item  ---------------------->
+             <div class="set_item clearboth">
+                 <div class="item_keyname pull-left">模块标题：</div>
+                 <div class=" pull-left form-marginrigt">
+                   <label for="textfield"></label>
+                   <input type="text" name="textfield" id="textfield" class="form-control form-contro_style1 form-w_3">
+                 </div>
+                 <div class="pull-left cim_dun checkboxchoice_box">
+                   <div class="checkboxchoice_item clearboth">
+                       <span class="checkboxchoice_co pull-left">
+                          <input type="checkbox" name="checkbox" id="checkbox" class="choiceclass">
+                       </span>
+                       <label class="checkboxchoice_name pull-left" for="checkbox"> 
+                          <span class="checkboxchoice_name_t">显示</span></label>
+                   </div>
+               </div>
+            </div>  
+            <!---------------form item  ---------------------->
+             <div class="set_item set_item_e clearboth">
+                 <div class="item_keyname pull-left">模块效果：</div>
+               <div class="set_picture_background_style radiochoice_box">
+                  <div class="pull-left radiochoice_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab1" id="templatetab1" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab1">背景跟随</label>
+                  </div>
+                 <div class="pull-left radiochoice_item">
+                     <span class="radiochoice_co">
+                     <input type="radio" name="templatetab2" id="templatetab2" class="form_choice choiceclass" />
+                     </span>
+                     <label for="templatetab2">背景锁定</label>
+                 </div>
+               </div>
+            </div> 
+         </div>
+         <!------------------内容设置 ------------------->
+         <div class="popup_main">
+            <!---------------form item  ---------------------->
+             <div class="set_item popupmain_setitem clearboth">
+                 <div class="item_keyname pull-left">背景颜色：</div>
+                 <div class=" pull-left form-marginrigt">
+                      <input id="bgcolor" type="text"  name="textfield"  class="form-control form-contro_style1 set_backgroundcolor_cont cont_cxcolor" value="#ff9d9d"  readonly />
+                 </div>
+                 <div class="pull-left cim_dun checkboxchoice_box">
+                   <div class="checkboxchoice_item clearboth">
+                       <span class="checkboxchoice_co pull-left">
+                          <input type="checkbox" name="checkbox" id="checkbox" class="choiceclass">
+                       </span>
+                       <label class="checkboxchoice_name pull-left" for="checkbox"> 
+                          <span class="checkboxchoice_name_t">显示</span></label>
+                   </div>
+               </div>
+            </div>  
+            <!---------------form item  ---------------------->
+             <div class="set_item set_backgroundimages_item clearboth">
+                 <div class="item_keyname pull-left">背景图片：</div>
+                 <div class=" pull-left form-marginrigt set_backgroundimages_contme">
+                       
+                 </div>
+                 <div class="pull-left cim_dun checkboxchoice_box">
+                   <div class=" clearboth set_backgroundimages_upload">
+                     <div class="pull-left form-marginrigt   set_backgroundimages_upload_btn">
+                        <span class="icon-uniE92D"></span>
+                        <label for="fileField"></label>
+                        <input type="file" name="fileField" id="fileField" class="choiceclass backgroundfileclass">
+                     </div>
+                     <span class=" pull-left">
+                        <div class="fileerrorTip"></div>
+                        <div class="showFileName"></div>
+                     </span>
+                   </div>
+                   <div class="set_backgroundimages_upload_prompt">
+                      <b>提示：</b>
+                      <p>文件大小：支持上传3M内的图片</p>
+                      <p>文件格式：支持 .jpg .jpeg .gif .png .bmp图片格式</p>
+                   </div>
+               </div>
+            </div>  
+            <!---------------form item  ---------------------->
+            <div class="set_item clearboth">
+                 <div class="item_keyname pull-left">显示方式：</div>
+                 <div class=" pull-left form-marginrigt set_backgroundimages_mode clearboth">
+                     <a href="javascript:;"  class="pull-left artive">平铺</a>
+                     <a href="javascript:;"  class="pull-left">纵向平铺</a>
+                     <a href="javascript:;"  class="pull-left">横向平铺</a>
+                     <a href="javascript:;"  class="pull-left">不平铺</a>
+                 </div>
+             </div>
+             <!---------------form item  ---------------------->
+            <div class="set_item clearboth">
+                 <div class="item_keyname pull-left">对齐方式：</div>
+                 <div class=" pull-left form-marginrigt set_backgroundimages_mode clearboth">
+                     <a href="javascript:;" class="pull-left ">平铺</a>
+                     <a href="javascript:;" class="pull-left artive">纵向平铺</a>
+                     <a href="javascript:;" class="pull-left">横向平铺</a>
+                     <a href="javascript:;" class="pull-left">不平铺</a>
+                 </div>
+             </div>
+         </div>
+         <div class="form-botton">
+              <input type="submit" name="button" id="button" value="确定提交" class="btn btn_a">
+              <input type="reset" name="button" id="button" value="重置" class="btn btn_b">
+         </div>
+         </form>
+      </div>
+   </div>
+   </div>
+</div>
+<script>
+$("#bgcolor").cxColor();
+</script>
+</body>
+
+</html>
